@@ -1,0 +1,21 @@
+query GetWatchingAnimeQuery($userName: String, $type: MediaType, $status: MediaListStatus) {
+  MediaListCollection(userName: $userName, type: $type, status: $status) {
+    lists {
+      entries {
+        progress
+        media {
+          title {
+            romaji
+            english
+            native
+            userPreferred
+          }
+          coverImage {
+            color
+            large
+          }
+        }
+      }
+    }
+  }
+}
