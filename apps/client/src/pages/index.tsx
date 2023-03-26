@@ -1,16 +1,24 @@
 import { Banner } from "$modules/Banner/Banner";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { NextPage } from "next";
 import { Button } from "ui";
 
 const IndexPage: NextPage = () => {
   return (
-    <Container maxWidth={false}>
-      <div className="bg-red-100">
-        <Banner />
-        <Button />
-      </div>
-    </Container>
+    <div className="relative w-screen">
+      <Banner />
+      <div className="absolute -z-10 h-[42vh] w-[70vw] bg-gradient-to-r from-gray-800" />
+
+      <Container maxWidth="xl">
+        <div className="flex h-[42vh] items-center ">
+          <Typography variant="h2" fontWeight={700} color="white">
+            Hello there,
+            <br />
+            bookpanda here
+          </Typography>
+        </div>
+      </Container>
+    </div>
   );
 };
 

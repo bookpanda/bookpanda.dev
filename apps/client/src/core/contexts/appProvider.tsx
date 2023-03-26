@@ -16,7 +16,6 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
       status: "COMPLETED" as InputMaybe<MediaListStatus>,
     },
   });
-  console.log("data ", data);
 
   return <AppContext.Provider value={{ data }}>{children}</AppContext.Provider>;
 };
