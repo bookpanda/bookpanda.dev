@@ -1,8 +1,9 @@
 {
-  "name": "codegen",
-  "version": "1.0.0",
+  "name": "@bookpanda/codegen",
+  "version": "0.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.ts",
+  "private": true,
   "scripts": {
     "dev": "nodemon --watch src --ext \"graphql\" --exec pnpm codegen",
     "codegen": "graphql-codegen",

@@ -1,4 +1,4 @@
-query GetWatchingAnime($userName: String, $type: MediaType, $status: MediaListStatus) {
+query GetBanner($userName: String, $type: MediaType, $status: MediaListStatus) {
   MediaListCollection(userName: $userName, type: $type, status: $status) {
     lists {
       entries {
@@ -14,6 +14,7 @@ query GetWatchingAnime($userName: String, $type: MediaType, $status: MediaListSt
             color
             large
           }
+          bannerImage
         }
       }
     }

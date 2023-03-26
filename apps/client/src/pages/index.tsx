@@ -1,12 +1,16 @@
+import { Banner } from "$modules/Banner/Banner";
+import { Container } from "@mui/material";
 import { NextPage } from "next";
 import { Button } from "ui";
 
 const IndexPage: NextPage = () => {
   return (
-    <div>
-      <h1>Index Page</h1>
-      <Button />
-    </div>
+    <Container maxWidth={false}>
+      <div className="bg-red-100">
+        <Banner />
+        <Button />
+      </div>
+    </Container>
   );
 };
 

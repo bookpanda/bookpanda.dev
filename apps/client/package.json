@@ -9,6 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.3",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.14",
+    "graphql": "^16.6.0",
     "next": "^13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -16,6 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@bookpanda/codegen": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",

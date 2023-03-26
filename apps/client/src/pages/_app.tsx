@@ -1,16 +1,27 @@
+import "$styles/global.scss";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import "$styles/global.scss";
+import { AppProvider } from "src/core/contexts/appProvider";
+
+const client = new ApolloClient({
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT,
+  cache: new InMemoryCache(),
+});
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>App Name</title>
+        <title>bookpanda.dev</title>
         <meta content="App description" name="description" />
       </Head>
 
-      <Component {...pageProps} />
+      <ApolloProvider client={client}>
+        <AppProvider>
+          <Component {...pageProps} />
+        </AppProvider>
+      </ApolloProvider>
     </>
   );
 }
