@@ -3,7 +3,11 @@ import { createTheme } from "@mui/material";
 import { colorPalette } from "./colors";
 
 export const theme = createTheme({
-  palette: {},
+  palette: {
+    secondary: {
+      main: "#ffffff",
+    },
+  },
   breakpoints: {
     values: {
       xs: 0,

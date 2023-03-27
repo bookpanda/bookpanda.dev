@@ -1,15 +1,17 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import clsx from "clsx";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { FC, PropsWithChildren, useEffect, useState } from "react";
+import { theme } from "src/theme";
 
-type NavExtLinkType = {
+interface INavExtLink extends PropsWithChildren {
   text: string;
   link: string;
-};
+}
 
-export const NavExtLink: FC<NavExtLinkType> = ({ link, text }) => {
+export const NavExtLink: FC<INavExtLink> = ({ children, link, text }) => {
+  const breakSM = useMediaQuery(theme.breakpoints.up("sm"));
   const [pathname, setPathname] = useState("");
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -19,18 +21,22 @@ export const NavExtLink: FC<NavExtLinkType> = ({ link, text }) => {
   return (
     <div
       className={clsx(
-        "px-2",
+        "px-2 pb-2 sm:pb-0",
         clsx(pathname === link && "border-b-2 border-red-700")
       )}
     >
       <Link href={link} rel="noopener noreferrer" target="_blank">
-        <Typography
-          variant="h6"
-          fontWeight={pathname === link ? 600 : 400}
-          color={pathname === link ? "white" : grey[400]}
-        >
-          {text}
-        </Typography>
+        {breakSM ? (
+          <Typography
+            variant="h6"
+            fontWeight={pathname === link ? 600 : 400}
+            color={pathname === link ? "white" : grey[400]}
+          >
+            {text}
+          </Typography>
+        ) : (
+          children
+        )}
       </Link>
     </div>
   );
