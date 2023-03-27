@@ -1,8 +1,10 @@
 import { Fade, Skeleton } from "@mui/material";
+import clsx from "clsx";
 import Image from "next/image";
 import { FC } from "react";
 import { useAppContext } from "src/core/contexts";
 
+import { bannerHide } from "./NavBar/bannerClass";
 import { processData } from "./processData";
 
 export const Banner: FC = () => {
@@ -11,15 +13,17 @@ export const Banner: FC = () => {
   const link = entry?.media?.bannerImage ?? "";
 
   return (
-    <div className="shadow-inner-2xl absolute -z-10 h-[42vh] w-[100vw] overflow-hidden bg-gray-800">
+    <div className={clsx("h-[42vh] w-[100vw] bg-gray-800", bannerHide)}>
       {link ? (
         <Fade in={Boolean(link)} timeout={2000}>
           <Image
             loader={() => link}
             src={link}
-            width={2000}
-            height={100}
+            // width={2000}
+            // height={100}
+            style={{ objectFit: "cover" }}
             alt="banner"
+            fill
           />
         </Fade>
       ) : (
