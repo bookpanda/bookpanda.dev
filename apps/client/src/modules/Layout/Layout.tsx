@@ -32,7 +32,7 @@ const Layout: FC<ILayout> = ({ children, header }) => {
       />
 
       <Container maxWidth="xl">
-        <div className="flex h-[42vh] flex-col">
+        <div className="mb-20 flex h-[42vh] flex-col">
           <NavBar />
           <div className="ml-8 flex h-[35vh] items-center" ref={divRef}>
             <Slide

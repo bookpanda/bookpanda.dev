@@ -1,4 +1,5 @@
 import Layout from "$modules/Layout/Layout";
+import { Feed } from "$modules/index";
 import { NextPage } from "next";
 
 const IndexPage: NextPage = () => {
@@ -11,8 +12,7 @@ const IndexPage: NextPage = () => {
         </p>
       }
     >
-      <div className="h-[20vh] w-full bg-blue-400">a</div>
-      <div>index</div>
+      <Feed></Feed>
     </Layout>
   );
 };
