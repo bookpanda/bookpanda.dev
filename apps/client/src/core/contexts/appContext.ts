@@ -5,7 +5,9 @@ interface IAppContext {
   data: GetBannerQueryResult | null;
 }
 
-export const AppContext = createContext<IAppContext>({ data: null });
+export const AppContext = createContext<IAppContext>({
+  data: null,
+});
 
 export function useAppContext() {
   return useContext(AppContext);
