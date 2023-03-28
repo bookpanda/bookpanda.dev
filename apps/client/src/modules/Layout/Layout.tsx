@@ -13,7 +13,8 @@ interface ILayout extends PropsWithChildren {
 
 const Layout: FC<ILayout> = ({ children, header }) => {
   const divRef = useRef(null);
-  const breakSM = useMediaQuery(theme.breakpoints.up("sm"));
+  const breakMD = useMediaQuery(theme.breakpoints.up("md"));
+  const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
     <div className="relative w-screen">
@@ -42,8 +43,12 @@ const Layout: FC<ILayout> = ({ children, header }) => {
               easing={{ enter: theme.transitions.easing.easeOut }}
               timeout={{ enter: theme.transitions.duration.complex }}
             >
-              {breakSM ? (
+              {breakLG ? (
                 <Typography variant="h2" fontWeight={700} color="white">
+                  {header}
+                </Typography>
+              ) : breakMD ? (
+                <Typography variant="h3" fontWeight={700} color="white">
                   {header}
                 </Typography>
               ) : (

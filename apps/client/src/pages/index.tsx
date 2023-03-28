@@ -6,10 +6,13 @@ const IndexPage: NextPage = () => {
   return (
     <Layout
       header={
-        <p>
-          Hello there, <br />
-          bookpanda here
-        </p>
+        <>
+          <p className="hidden lg:block">
+            Hello there, <br />
+            bookpanda here
+          </p>
+          <p className="lg:hidden">It's me, bookpanda</p>
+        </>
       }
     >
       <Feed></Feed>
