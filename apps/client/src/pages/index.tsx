@@ -11,7 +11,7 @@ const IndexPage: NextPage = () => {
             Hello there, <br />
             bookpanda here
           </p>
-          <p className="lg:hidden">It's me, bookpanda</p>
+          <p className="lg:hidden">It&apos;s me, bookpanda</p>
         </>
       }
     >
