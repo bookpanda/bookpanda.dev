@@ -1,14 +1,7 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Collapse,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, Collapse, Typography } from "@mui/material";
 import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { FC, useState } from "react";
 
 import styles from "./Feed.module.scss";
@@ -30,29 +23,27 @@ export const FeedItem: FC<IFeedItem> = ({ desc, image, name, url }) => {
       role="presentation"
     >
       <Card sx={{ maxWidth: 345 }}>
-        {/* <CardMedia sx={{ height: 180 }} image={image} title="green iguana" /> */}
-        <Image
-          src={image}
-          width={2000}
-          height={2000}
-          // loader={() => image}
-          // style={{ objectFit: "contain" }}
-          alt="banner"
-          // fill
-        />
+        <Link href={url} rel="noopener noreferrer" target="_blank">
+          <div className="h-[25vh] w-full overflow-hidden bg-red-100">
+            <Image
+              src={image}
+              // width={2000}
+              // height={2000}
+              // fill
+              style={{ objectFit: "cover" }}
+              alt="banner"
+            />
+          </div>
+        </Link>
         <Collapse in={show} timeout={300}>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h6" component="div">
               {name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {desc}
             </Typography>
           </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
         </Collapse>
       </Card>
     </div>

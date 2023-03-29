@@ -16,6 +16,8 @@ const IndexPage: NextPage = () => {
       }
     >
       <Feed></Feed>
+      <Feed></Feed>
+      <Feed></Feed>
     </Layout>
   );
 };

@@ -1,34 +1,46 @@
-import { intaniaCal, thai2kana } from "public/images";
+import {
+  aniTimeline,
+  autoPraeAksorn,
+  intaniaCal,
+  remuNekoka,
+  thai2kana,
+} from "public/images";
 
 export const projects = [
   {
     name: "Intania Department Calculator",
     details:
       "Calculates your grades to assess your chance of getting into desired engineering department.",
-    url: "intania-department-calculator.vercel.app",
+    url: "https://intania-department-calculator.vercel.app",
     image: intaniaCal,
+  },
+  {
+    name: "レム　ゴロゴロ　猫か",
+    details: "Make her happy by moving your mouse over her head!",
+    url: "https://remu-goro-nekoka.vercel.app",
+    image: remuNekoka,
   },
   {
     name: "AutoPraeAksorn",
     details:
       "Automatically turns images into card stunts (Prae Aksorn), inspired by Jaturamitr card stunts.",
-    url: "auto-prae-aksorn-client.vercel.app",
+    url: "https://auto-prae-aksorn-client.vercel.app",
+    image: autoPraeAksorn,
+  },
+  {
+    name: "AniTimeline",
+    details:
+      "A webapp that shows data from the AniList's public API by user's ID.",
+    url: "https://ani-timeline-client.vercel.app",
+    image: aniTimeline,
+  },
+  {
+    name: "Thai2Kana",
+    details:
+      "A program that tries to convert the Thai language into Katakana script using Wanakana and PyThaiNLP libraries.",
+    url: "thai2-kana-client.vercel.app",
     image: thai2kana,
   },
-  //   {
-  //     name: "AniTimeline",
-  //     details:
-  //       "A webapp that shows data from the AniList's public API by user's ID.",
-  //     url: "ani-timeline-client.vercel.app",
-  //     image: "/../../data/images/1.png",
-  //   },
-  //   {
-  //     name: "Thai2Kana",
-  //     details:
-  //       "A program that tries to convert the Thai language into Katakana script using Wanakana and PyThaiNLP libraries.",
-  //     url: "thai2-kana-client.vercel.app",
-  //     image: "/images/1.png",
-  //   },
   //   {
   //     name: "Thinc's 1-week Hack to School Project (Frontend)",
   //     details:

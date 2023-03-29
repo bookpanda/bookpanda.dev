@@ -8,7 +8,7 @@ import { FeedItem } from "./FeedItem";
 
 export const Feed: FC = () => {
   return (
-    <div className={clsx("w-full bg-red-100", styles.feed)}>
+    <div className={clsx("h-[57vh] w-full bg-red-100", styles.feed)}>
       <Typography variant="h4" fontWeight={600}>
         Projects
       </Typography>
