@@ -4,32 +4,56 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Collapse,
   Typography,
 } from "@mui/material";
-import { FC } from "react";
+import clsx from "clsx";
+import Image, { StaticImageData } from "next/image";
+import { FC, useState } from "react";
 
-export const FeedItem: FC = () => {
+import styles from "./Feed.module.scss";
+
+interface IFeedItem {
+  name: string;
+  desc: string;
+  url: string;
+  image: StaticImageData;
+}
+
+export const FeedItem: FC<IFeedItem> = ({ desc, image, name, url }) => {
+  const [show, setShow] = useState(false);
   return (
-    <div className="w-1/4 bg-red-100">
+    <div
+      className={clsx("feed min-w-[25%] duration-300 ease-in", styles.item)}
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+      role="presentation"
+    >
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="green iguana"
+        {/* <CardMedia sx={{ height: 180 }} image={image} title="green iguana" /> */}
+        <Image
+          src={image}
+          width={2000}
+          height={2000}
+          // loader={() => image}
+          // style={{ objectFit: "contain" }}
+          alt="banner"
+          // fill
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
-        </CardActions>
+        <Collapse in={show} timeout={300}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {desc}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Collapse>
       </Card>
     </div>
   );

@@ -4,7 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "$modules/*": ["src/modules/*"],
-      "$styles/*": ["src/styles/*"]
+      "$styles/*": ["src/styles/*"],
+      "$data/*": ["src/data/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

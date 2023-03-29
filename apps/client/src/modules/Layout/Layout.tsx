@@ -17,7 +17,7 @@ const Layout: FC<ILayout> = ({ children, header }) => {
   const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
-    <div className="relative w-screen">
+    <div className="relative w-screen overflow-x-clip">
       <Banner />
       <div
         className={clsx(
@@ -33,7 +33,7 @@ const Layout: FC<ILayout> = ({ children, header }) => {
       />
 
       <Container maxWidth="xl">
-        <div className="mb-20 flex h-[42vh] flex-col">
+        <div className="mb-10 flex h-[42vh] flex-col">
           <NavBar />
           <div className="ml-8 flex h-[35vh] items-center" ref={divRef}>
             <Slide

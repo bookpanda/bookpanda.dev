@@ -1,0 +1,15 @@
+.feed {}
+
+.item {}
+
+.feed:hover .item {
+    transform: translateX(-5%);
+ }
+
+ .item:hover ~ .item {
+    transform: translateX(5%);
+ }
+
+ .item:hover {
+   transform: scale(1.1) !important;
+ }
