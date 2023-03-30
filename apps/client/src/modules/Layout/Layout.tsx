@@ -17,7 +17,7 @@ const Layout: FC<ILayout> = ({ children, header }) => {
   const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
-    <div className="relative w-screen overflow-x-clip">
+    <div className="w-max-screen relative overflow-x-clip">
       <Banner />
       <div
         className={clsx(

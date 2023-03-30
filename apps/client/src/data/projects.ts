@@ -37,8 +37,8 @@ export const projects = [
   {
     name: "Thai2Kana",
     details:
-      "A program that tries to convert the Thai language into Katakana script using Wanakana and PyThaiNLP libraries.",
-    url: "thai2-kana-client.vercel.app",
+      "A program that tries to convert the Thai language into Katakana script.",
+    url: "https://thai2-kana-client.vercel.app",
     image: thai2kana,
   },
   //   {

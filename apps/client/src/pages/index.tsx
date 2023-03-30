@@ -1,10 +1,6 @@
 import Layout from "$modules/Layout/Layout";
 import { Feed } from "$modules/index";
-import { Card, Collapse } from "@mui/material";
 import { NextPage } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { intaniaCal } from "public/images";
 
 const IndexPage: NextPage = () => {
   return (

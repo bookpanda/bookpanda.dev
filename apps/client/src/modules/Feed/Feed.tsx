@@ -1,29 +1,19 @@
-import { projects } from "$data/projects";
 import { Typography } from "@mui/material";
 import clsx from "clsx";
 import { FC } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import styles from "./Feed.module.scss";
-import { FeedItem } from "./FeedItem";
+import { FeedSlider } from "./FeedSlider";
 
 export const Feed: FC = () => {
   return (
-    <div className={clsx("h-[57vh] w-full bg-red-100", styles.feed)}>
-      <Typography variant="h4" fontWeight={600}>
+    <div className={clsx("mb-20 h-[57vh] w-full", styles.feed)}>
+      <Typography variant="h4" fontWeight={600} marginBottom={2}>
         Projects
       </Typography>
-      <div className="feed mt-4 flex w-full bg-green-100">
-        {projects.map((proj) => {
-          return (
-            <FeedItem
-              key={proj.name}
-              name={proj.name}
-              desc={proj.details}
-              url={proj.url}
-              image={proj.image}
-            />
-          );
-        })}
+      <div className="mt-6 h-[25vh] w-full">
+        <FeedSlider />
       </div>
     </div>
   );
