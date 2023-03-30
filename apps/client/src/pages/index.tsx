@@ -20,30 +20,6 @@ const IndexPage: NextPage = () => {
       }
     >
       <Feed></Feed>
-      <div className="mb-10 bg-blue-100">
-        <Card sx={{ width: "30%" }}>
-          <Link href={""} rel="noopener noreferrer" target="_blank">
-            <div className="h-[55vh] w-full overflow-hidden bg-purple-100">
-              {/* <Image
-              src={image}
-              // width={2000}
-              // height={2000}
-              // fill
-              style={{ objectFit: "cover" }}
-              alt="banner"
-            /> */}
-              <Image
-                alt="kawi"
-                src={intaniaCal}
-                // width={500}
-                // height={300}
-                // style={{ objectFit: "contain" }}
-                // fill
-              />
-            </div>
-          </Link>
-        </Card>
-      </div>
       <Feed></Feed>
       <Feed></Feed>
     </Layout>
