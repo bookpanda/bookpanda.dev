@@ -1,4 +1,4 @@
-query GetWatchingAnime($userName: String, $type: MediaType, $status: MediaListStatus) {
+query GetAnime($userName: String, $type: MediaType, $status: MediaListStatus) {
   MediaListCollection(userName: $userName, type: $type, status: $status) {
     lists {
       entries {

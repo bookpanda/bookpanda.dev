@@ -8,8 +8,8 @@ import { bannerHide } from "./NavBar/bannerClass";
 import { processData } from "./processData";
 
 export const Banner: FC = () => {
-  const { data } = useAppContext();
-  const entry = processData(data);
+  const { bannerData } = useAppContext();
+  const entry = processData(bannerData);
   const link = entry?.media?.bannerImage ?? "";
 
   return (

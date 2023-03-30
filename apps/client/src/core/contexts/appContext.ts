@@ -1,12 +1,14 @@
-import { GetBannerQueryResult } from "@bookpanda/codegen";
+import { GetAnimeQueryResult, GetBannerQueryResult } from "@bookpanda/codegen";
 import { createContext, useContext } from "react";
 
 interface IAppContext {
-  data: GetBannerQueryResult | null;
+  bannerData: GetBannerQueryResult | null;
+  watchingData: GetAnimeQueryResult | null;
 }
 
 export const AppContext = createContext<IAppContext>({
-  data: null,
+  bannerData: null,
+  watchingData: null,
 });
 
 export function useAppContext() {
