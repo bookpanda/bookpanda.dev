@@ -2,6 +2,7 @@ import {
   InputMaybe,
   MediaListStatus,
   MediaType,
+  useGetAnimeQuery,
   useGetBannerQuery,
 } from "@bookpanda/codegen";
 import { FC, PropsWithChildren } from "react";
@@ -9,13 +10,24 @@ import { FC, PropsWithChildren } from "react";
 import { AppContext } from "./appContext";
 
 export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
-  const data = useGetBannerQuery({
+  const bannerData = useGetBannerQuery({
     variables: {
       userName: "thatpasoknikorn",
       type: "ANIME" as InputMaybe<MediaType>,
       status: "COMPLETED" as InputMaybe<MediaListStatus>,
     },
   });
+  const watchingData = useGetAnimeQuery({
+    variables: {
+      userName: "bookpanda",
+      type: "ANIME" as InputMaybe<MediaType>,
+      status: "WATCHING" as InputMaybe<MediaListStatus>,
+    },
+  });
 
-  return <AppContext.Provider value={{ data }}>{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider value={{ bannerData, watchingData }}>
+      {children}
+    </AppContext.Provider>
+  );
 };

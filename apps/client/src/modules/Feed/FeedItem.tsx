@@ -1,4 +1,10 @@
-import { Card, CardContent, Collapse, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Collapse,
+  Typography,
+} from "@mui/material";
 import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
@@ -24,16 +30,22 @@ export const FeedItem: FC<IFeedItem> = ({ desc, image, name, url }) => {
     >
       <Card sx={{ maxWidth: 345 }}>
         <Link href={url} rel="noopener noreferrer" target="_blank">
-          <div className="h-[25vh] w-full overflow-hidden bg-red-100">
+          {/* <CardContent> */}
+          <div className="h-[25vh] overflow-hidden">
             <Image
               src={image}
               // width={2000}
               // height={2000}
               // fill
-              style={{ objectFit: "cover" }}
+              style={{
+                objectFit: "cover",
+                minHeight: "100%",
+                minWidth: "100%",
+              }}
               alt="banner"
             />
           </div>
+          {/* </CardContent> */}
         </Link>
         <Collapse in={show} timeout={300}>
           <CardContent>
