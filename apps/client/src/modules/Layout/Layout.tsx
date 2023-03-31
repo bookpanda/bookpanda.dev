@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { FC, PropsWithChildren, ReactNode, useRef } from "react";
 import { theme } from "src/theme";
 
+import Footer from "./Footer";
 import { NavBar } from "./NavBar/NavBar";
 import { bannerHide } from "./NavBar/bannerClass";
 
@@ -61,6 +62,7 @@ const Layout: FC<ILayout> = ({ children, header }) => {
         </div>
         {children}
       </Container>
+      <Footer />
     </div>
   );
 };
