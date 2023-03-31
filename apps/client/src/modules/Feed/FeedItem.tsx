@@ -1,7 +1,9 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
 import {
   Card,
   CardContent,
   Collapse,
+  IconButton,
   Typography,
   useMediaQuery,
 } from "@mui/material";
@@ -14,13 +16,16 @@ import { theme } from "src/theme";
 import styles from "./Feed.module.scss";
 
 interface IFeedItem {
-  name: string;
-  desc: string;
-  url: string;
-  image: StaticImageData;
+  prop: {
+    name: string;
+    details: string;
+    url: string;
+    image: StaticImageData;
+    github: string;
+  };
 }
 
-export const FeedItem: FC<IFeedItem> = ({ desc, image, name, url }) => {
+export const FeedItem: FC<IFeedItem> = ({ prop }) => {
   const breakSM = useMediaQuery(theme.breakpoints.up("md"));
   const [show, setShow] = useState(false);
   return (
@@ -34,10 +39,10 @@ export const FeedItem: FC<IFeedItem> = ({ desc, image, name, url }) => {
       role="presentation"
     >
       <Card sx={{ maxWidth: 345 }}>
-        <Link href={url} rel="noopener noreferrer" target="_blank">
+        <Link href={prop.url} rel="noopener noreferrer" target="_blank">
           <div className="h-[25vh] overflow-hidden">
             <Image
-              src={image}
+              src={prop.image}
               style={{
                 objectFit: "cover",
                 minHeight: "100%",
@@ -50,11 +55,16 @@ export const FeedItem: FC<IFeedItem> = ({ desc, image, name, url }) => {
         <Collapse in={show || !breakSM} timeout={300}>
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">
-              {name}
+              {prop.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {desc}
+              {prop.details}
             </Typography>
+            <Link href={prop.github} rel="noopener noreferrer" target="_blank">
+              <IconButton sx={{ marginTop: 2 }} size="large">
+                <GitHubIcon />
+              </IconButton>
+            </Link>
           </CardContent>
         </Collapse>
       </Card>

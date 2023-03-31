@@ -32,39 +32,15 @@ export const FeedSlider: FC = () => {
               key={proj[0].name}
               className={clsx("flex w-full justify-center", styles.feed)}
             >
-              <FeedItem
-                key={proj[0].name}
-                name={proj[0].name}
-                desc={proj[0].details}
-                url={proj[0].url}
-                image={proj[0].image}
-              />
+              <FeedItem key={proj[0].name} prop={proj[0]} />
               {proj.length > 1 && (
-                <FeedItem
-                  key={proj[1].name}
-                  name={proj[1].name}
-                  desc={proj[1].details}
-                  url={proj[1].url}
-                  image={proj[1].image}
-                />
+                <FeedItem key={proj[1].name} prop={proj[1]} />
               )}
               {proj.length > 2 && (
-                <FeedItem
-                  key={proj[2].name}
-                  name={proj[2].name}
-                  desc={proj[2].details}
-                  url={proj[2].url}
-                  image={proj[2].image}
-                />
+                <FeedItem key={proj[2].name} prop={proj[2]} />
               )}
               {proj.length > 3 && (
-                <FeedItem
-                  key={proj[3].name}
-                  name={proj[3].name}
-                  desc={proj[3].details}
-                  url={proj[3].url}
-                  image={proj[3].image}
-                />
+                <FeedItem key={proj[3].name} prop={proj[3]} />
               )}
             </div>
           );
@@ -89,21 +65,9 @@ export const FeedSlider: FC = () => {
               key={proj[0].name}
               className={clsx("flex w-full justify-center", styles.feed)}
             >
-              <FeedItem
-                key={proj[0].name}
-                name={proj[0].name}
-                desc={proj[0].details}
-                url={proj[0].url}
-                image={proj[0].image}
-              />
+              <FeedItem key={proj[0].name} prop={proj[0]} />
               {proj.length > 1 && (
-                <FeedItem
-                  key={proj[1].name}
-                  name={proj[1].name}
-                  desc={proj[1].details}
-                  url={proj[1].url}
-                  image={proj[1].image}
-                />
+                <FeedItem key={proj[1].name} prop={proj[1]} />
               )}
             </div>
           );
@@ -128,13 +92,7 @@ export const FeedSlider: FC = () => {
               key={proj[0].name}
               className={clsx("flex w-full justify-center", styles.feed)}
             >
-              <FeedItem
-                key={proj[0].name}
-                name={proj[0].name}
-                desc={proj[0].details}
-                url={proj[0].url}
-                image={proj[0].image}
-              />
+              <FeedItem key={proj[0].name} prop={proj[0]} />
             </div>
           );
         })}

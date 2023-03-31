@@ -12,12 +12,14 @@ export const projects = [
     details:
       "Calculates your grades to assess your chance of getting into desired engineering department.",
     url: "https://intania-department-calculator.vercel.app",
+    github: "https://github.com/bookpanda/intania-department-calculator",
     image: intaniaCal,
   },
   {
     name: "レム　ゴロゴロ　猫か",
     details: "Make her happy by moving your mouse over her head!",
     url: "https://remu-goro-nekoka.vercel.app",
+    github: "https://github.com/bookpanda/remu-goro-nekoka",
     image: remuNekoka,
   },
   {
@@ -25,6 +27,7 @@ export const projects = [
     details:
       "Automatically turns images into card stunts (Prae Aksorn), inspired by Jaturamitr card stunts.",
     url: "https://auto-prae-aksorn-client.vercel.app",
+    github: "https://github.com/bookpanda/AutoPraeAksorn",
     image: autoPraeAksorn,
   },
   {
@@ -32,6 +35,7 @@ export const projects = [
     details:
       "A webapp that shows data from the AniList's public API by user's ID.",
     url: "https://ani-timeline-client.vercel.app",
+    github: "https://github.com/bookpanda/AniTimeline",
     image: aniTimeline,
   },
   {
@@ -39,6 +43,7 @@ export const projects = [
     details:
       "A program that tries to convert the Thai language into Katakana script.",
     url: "https://thai2-kana-client.vercel.app",
+    github: "https://github.com/bookpanda/Thai2Kana",
     image: thai2kana,
   },
   //   {
