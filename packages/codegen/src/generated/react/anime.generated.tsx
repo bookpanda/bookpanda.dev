@@ -10,7 +10,7 @@ export type GetAnimeQueryVariables = Types.Exact<{
 }>;
 
 
-export type GetAnimeQuery = { __typename?: 'Query', MediaListCollection?: { __typename?: 'MediaListCollection', lists?: Array<{ __typename?: 'MediaListGroup', entries?: Array<{ __typename?: 'MediaList', progress?: number | null, media?: { __typename?: 'Media', title?: { __typename?: 'MediaTitle', romaji?: string | null, english?: string | null, native?: string | null, userPreferred?: string | null } | null, coverImage?: { __typename?: 'MediaCoverImage', color?: string | null, large?: string | null } | null } | null } | null> | null } | null> | null } | null };
+export type GetAnimeQuery = { __typename?: 'Query', MediaListCollection?: { __typename?: 'MediaListCollection', lists?: Array<{ __typename?: 'MediaListGroup', entries?: Array<{ __typename?: 'MediaList', progress?: number | null, media?: { __typename?: 'Media', episodes?: number | null, title?: { __typename?: 'MediaTitle', romaji?: string | null, english?: string | null, native?: string | null, userPreferred?: string | null } | null, coverImage?: { __typename?: 'MediaCoverImage', color?: string | null, large?: string | null } | null } | null } | null> | null } | null> | null } | null };
 
 
 export const GetAnimeDocument = gql`
@@ -30,6 +30,7 @@ export const GetAnimeDocument = gql`
             color
             large
           }
+          episodes
         }
       }
     }

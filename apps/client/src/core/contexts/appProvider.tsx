@@ -21,7 +21,7 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
     variables: {
       userName: "bookpanda",
       type: "ANIME" as InputMaybe<MediaType>,
-      status: "WATCHING" as InputMaybe<MediaListStatus>,
+      status: "CURRENT" as InputMaybe<MediaListStatus>,
     },
   });
 
