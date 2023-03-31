@@ -33,12 +33,12 @@ export const WatchingAnime = () => {
     }
   }
   return (
-    <div className="flex justify-evenly bg-red-100">
+    <div className="flex flex-col justify-evenly md:flex-row">
       {data.current &&
         data.current.map((d) => (
           <div
             key={d.title}
-            className="w-1/8 flex flex-col items-center justify-between"
+            className="w-1/8 mb-10 flex flex-col items-center justify-between"
           >
             <Image
               src={d.image}
@@ -53,8 +53,10 @@ export const WatchingAnime = () => {
               loader={() => d.image}
               className="mb-4"
             />
-            <Typography variant="h6">{d.title}</Typography>
-            <Typography variant="body1">
+            <Typography variant="h6" textAlign="center">
+              {d.title}
+            </Typography>
+            <Typography variant="body1" textAlign="center">
               Episode: {d.progress} / {d.episodes}
             </Typography>
           </div>

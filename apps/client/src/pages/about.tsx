@@ -9,7 +9,7 @@ const AboutPage: NextPage = () => {
   return (
     <Layout header={<p>About me</p>}>
       <div className="h-[70vh]">
-        <Typography variant="h3" fontWeight={600}>
+        <Typography variant="h4" fontWeight={600}>
           Who am I?
         </Typography>
         <Typography variant="h6" fontWeight={300} marginBottom={10}>
