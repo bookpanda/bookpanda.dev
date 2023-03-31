@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Skeleton, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRef } from "react";
 import { useAppContext } from "src/core/contexts";
@@ -34,7 +34,7 @@ export const WatchingAnime = () => {
   }
   return (
     <div className="flex flex-col justify-evenly md:flex-row">
-      {data.current &&
+      {data.current ? (
         data.current.map((d) => (
           <div
             key={d.title}
@@ -60,7 +60,10 @@ export const WatchingAnime = () => {
               Episode: {d.progress} / {d.episodes}
             </Typography>
           </div>
-        ))}
+        ))
+      ) : (
+        <Skeleton width={800} height={600} />
+      )}
     </div>
   );
 };
