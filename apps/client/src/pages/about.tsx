@@ -5,7 +5,7 @@ import { NextPage } from "next";
 const AboutPage: NextPage = () => {
   return (
     <Layout header={<p>About me</p>}>
-      <div>
+      <div className="h-[70vh]">
         <Typography variant="h3" fontWeight={600}>
           Who am I?
         </Typography>

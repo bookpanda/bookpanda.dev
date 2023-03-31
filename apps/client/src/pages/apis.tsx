@@ -4,7 +4,7 @@ import { NextPage } from "next";
 const APIPage: NextPage = () => {
   return (
     <Layout header={<p>APIs</p>}>
-      <div>API</div>
+      <div className="h-[70vh]">API</div>
     </Layout>
   );
 };

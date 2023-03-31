@@ -1,4 +1,4 @@
-import { LinearProgress, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Image from "next/image";
 import { useRef } from "react";
 import { useAppContext } from "src/core/contexts";

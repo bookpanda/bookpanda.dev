@@ -1,7 +1,7 @@
 import { Fade, Skeleton } from "@mui/material";
 import clsx from "clsx";
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { useAppContext } from "src/core/contexts";
 
 import { bannerHide } from "./NavBar/bannerClass";
