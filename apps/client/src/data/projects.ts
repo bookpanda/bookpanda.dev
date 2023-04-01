@@ -1,12 +1,20 @@
 import {
   aniTimeline,
   autoPraeAksorn,
+  bookpandaDev,
   intaniaCal,
   remuNekoka,
   thai2kana,
 } from "public/images";
 
 export const projects = [
+  {
+    name: "bookpanda.dev",
+    details: "My personal website as gallery for my projects and resume.",
+    url: "https://bookpanda.dev",
+    github: "https://github.com/bookpanda/bookpanda.dev",
+    image: bookpandaDev,
+  },
   {
     name: "Intania Department Calculator",
     details:
