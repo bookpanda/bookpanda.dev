@@ -20,7 +20,7 @@ export const monthNames = [
 ];
 
 export const WatchCalendar = () => {
-  const { completedData, selectedYear, setSelectedAnime, selectedAnime } =
+  const { completedData, selectedAnime, selectedYear, setSelectedAnime } =
     useAppContext();
   const calendar = processData(completedData);
   const a = [];
