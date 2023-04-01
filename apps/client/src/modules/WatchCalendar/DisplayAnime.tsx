@@ -13,21 +13,22 @@ export const DisplayAnime = () => {
   const edMonth = monthNames[selectedAnime?.ed.getMonth() ?? 0];
   const edYear = selectedAnime?.ed.getFullYear();
   return (
-    <div className="col flex h-full w-1/2 flex-col items-center justify-center">
+    <div className="col flex h-full w-1/2 flex-col items-center">
       {selectedAnime?.image ? (
-        <Image
-          alt={selectedAnime?.name ?? ""}
-          src={selectedAnime?.image ?? ""}
-          className="mb-4"
-          loader={() => selectedAnime?.image ?? ""}
-          style={{
-            objectFit: "cover",
-            minHeight: "70%",
-            minWidth: "30%",
-          }}
-          width={100}
-          height={1000}
-        />
+        <div className="mb-4 w-1/3">
+          <Image
+            alt={selectedAnime?.name ?? ""}
+            src={selectedAnime?.image ?? ""}
+            loader={() => selectedAnime?.image ?? ""}
+            style={{
+              objectFit: "cover",
+              minHeight: "100%",
+              minWidth: "100%",
+            }}
+            width={100}
+            height={1000}
+          />
+        </div>
       ) : (
         <div className="flex h-2/3 w-1/3 items-center justify-center rounded-lg bg-gray-100">
           <Typography variant="body1" textAlign="center">
