@@ -1,21 +1,28 @@
-query GetAnime($userName: String, $type: MediaType, $status: MediaListStatus) {
+query GetCompletedAnime($userName: String, $type: MediaType, $status: MediaListStatus, $format: ScoreFormat) {
   MediaListCollection(userName: $userName, type: $type, status: $status) {
     lists {
       entries {
-        progress
         media {
           title {
-            romaji
             english
-            native
             userPreferred
           }
           coverImage {
             color
             large
           }
-          episodes
         }
+        startedAt {
+          year
+          month
+          day
+        }
+        completedAt {
+          year
+          month
+          day
+        }
+        score(format: $format)
       }
     }
   }

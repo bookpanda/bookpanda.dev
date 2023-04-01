@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         "gray-bg": "#edf1f5",
       },
+      gridTemplateRows: {
+        7: "repeat(7, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [],

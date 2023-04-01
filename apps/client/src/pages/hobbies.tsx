@@ -1,4 +1,9 @@
 import Layout from "$modules/Layout/Layout";
+import {
+  DisplayAnime,
+  SelectYear,
+  WatchCalendar,
+} from "$modules/WatchCalendar";
 import { WatchingAnime } from "$modules/WatchingAnime";
 import { Typography } from "@mui/material";
 import { NextPage } from "next";
@@ -12,7 +17,13 @@ const HobbiesPage: NextPage = () => {
         </Typography>
         <WatchingAnime />
       </div>
-      <div className="w-full bg-red-100">s</div>
+      <div className="h-[60vh] w-full">
+        <WatchCalendar />
+        <div className="mt-8 flex h-[40vh] w-full justify-evenly">
+          <SelectYear />
+          <DisplayAnime />
+        </div>
+      </div>
     </Layout>
   );
 };
