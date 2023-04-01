@@ -38,7 +38,7 @@ export const WatchingAnime = () => {
         data.current.map((d) => (
           <div
             key={d.title}
-            className="w-1/8 mb-10 flex flex-col items-center justify-between"
+            className="mb-10 flex flex-col items-center justify-between md:w-1/2 lg:w-1/4"
           >
             <Image
               src={d.image}
