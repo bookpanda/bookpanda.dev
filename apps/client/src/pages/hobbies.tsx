@@ -10,7 +10,7 @@ import { NextPage } from "next";
 import { theme } from "src/theme";
 
 const HobbiesPage: NextPage = () => {
-  const breakXL = useMediaQuery(theme.breakpoints.up("xl"));
+  const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <Layout header={<p>Hobbies</p>}>
       <div className="mb-20">
@@ -19,8 +19,11 @@ const HobbiesPage: NextPage = () => {
         </Typography>
         <WatchingAnime />
       </div>
-      {breakXL && (
-        <div className="h-[70vh] w-full">
+      {breakLG && (
+        <div className="mb-40 h-[70vh] w-full">
+          <Typography variant="h4" fontWeight={600} marginBottom={3}>
+            Anime Watch History
+          </Typography>
           <WatchCalendar />
           <div className="mt-8 flex h-[50vh] w-full justify-evenly">
             <SelectYear />

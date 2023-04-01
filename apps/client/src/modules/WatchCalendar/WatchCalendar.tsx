@@ -1,6 +1,7 @@
-import { Tooltip } from "@mui/material";
+import { Tooltip, useMediaQuery } from "@mui/material";
 import clsx from "clsx";
 import { useAppContext } from "src/core/contexts";
+import { theme } from "src/theme";
 
 import { processData } from "./processData";
 
@@ -20,6 +21,7 @@ export const monthNames = [
 ];
 
 export const WatchCalendar = () => {
+  const breakXL = useMediaQuery(theme.breakpoints.up("xl"));
   const { completedData, selectedAnime, selectedYear, setSelectedAnime } =
     useAppContext();
   const calendar = processData(completedData);
@@ -49,7 +51,8 @@ export const WatchCalendar = () => {
                     selectedAnime?.name === d.anime[0]?.name
                       ? "opacity-100"
                       : "opacity-50",
-                    "h-4 w-4 rounded-sm border border-gray-400"
+                    "h-4 w-4 rounded-sm border border-gray-400",
+                    breakXL ? "h-4 w-4" : "h-3 w-3"
                   )}
                   style={{
                     backgroundColor: d.color !== "" ? d.color : "transparent",
