@@ -25,10 +25,6 @@ export const WatchCalendar = () => {
   const { completedData, selectedAnime, selectedYear, setSelectedAnime } =
     useAppContext();
   const calendar = processData(completedData);
-  const a = [];
-  for (let i = 1; i <= 365; i++) {
-    a.push(i);
-  }
   return (
     <div className="grid w-full grid-flow-col grid-rows-7 gap-1">
       {calendar &&
@@ -51,7 +47,8 @@ export const WatchCalendar = () => {
                     selectedAnime?.name === d.anime[0]?.name
                       ? "opacity-100"
                       : "opacity-50",
-                    "h-4 w-4 rounded-sm border border-gray-400",
+                    d.anime.length === 0 ? "rounded-xl" : "rounded-sm",
+                    "h-4 w-4 border border-gray-400",
                     breakXL ? "h-4 w-4" : "h-3 w-3"
                   )}
                   style={{

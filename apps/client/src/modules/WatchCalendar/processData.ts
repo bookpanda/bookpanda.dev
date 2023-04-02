@@ -33,8 +33,6 @@ export const processData = (data: GetCompletedAnimeQueryResult | null) => {
         const color = media?.coverImage?.color ?? "#ffffff";
         const cur = new Date(stDate);
         while (cur <= edDate) {
-          console.log(daysDiff(new Date(2022, 0, 1), cur));
-
           calendar[daysDiff(new Date(2022, 0, 1), cur)].anime.push({
             name,
             image,
