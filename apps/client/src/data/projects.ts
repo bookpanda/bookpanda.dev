@@ -5,6 +5,7 @@ import {
   intaniaCal,
   remuNekoka,
   thai2kana,
+  thincHackToSchool,
 } from "public/images";
 
 export const projects = [
@@ -24,19 +25,27 @@ export const projects = [
     image: intaniaCal,
   },
   {
-    name: "レム　ゴロゴロ　猫か",
-    details: "Make her happy by moving your mouse over her head!",
-    url: "https://remu-goro-nekoka.vercel.app",
-    github: "https://github.com/bookpanda/remu-goro-nekoka",
-    image: remuNekoka,
-  },
-  {
     name: "AutoPraeAksorn",
     details:
       "Automatically turns images into card stunts (Prae Aksorn), inspired by Jaturamitr card stunts.",
     url: "https://auto-prae-aksorn-client.vercel.app",
     github: "https://github.com/bookpanda/AutoPraeAksorn",
     image: autoPraeAksorn,
+  },
+  {
+    name: "Thinc's 1-week Hack to School Project",
+    details:
+      "Make an education platform app within a week. My job in the team was making frontend.",
+    url: "https://kita.cunny.dev",
+    github: "https://github.com/thinc-org/hacktoschool-kitakita",
+    image: thincHackToSchool,
+  },
+  {
+    name: "レム　ゴロゴロ　猫か",
+    details: "Make her happy by moving your mouse over her head!",
+    url: "https://remu-goro-nekoka.vercel.app",
+    github: "https://github.com/bookpanda/remu-goro-nekoka",
+    image: remuNekoka,
   },
   {
     name: "AniTimeline",
