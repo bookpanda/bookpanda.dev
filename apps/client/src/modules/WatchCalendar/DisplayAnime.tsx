@@ -13,9 +13,9 @@ export const DisplayAnime = () => {
   const edMonth = monthNames[selectedAnime?.ed.getMonth() ?? 0];
   const edYear = selectedAnime?.ed.getFullYear();
   return (
-    <div className="col flex h-full w-1/2 flex-col items-center">
+    <div className="col flex h-3/4 w-1/2 flex-col items-center">
       {selectedAnime?.image ? (
-        <div className="mb-4 w-1/3">
+        <div className="mb-4 h-full w-1/3">
           <Image
             alt={selectedAnime?.name ?? ""}
             src={selectedAnime?.image ?? ""}
@@ -30,7 +30,7 @@ export const DisplayAnime = () => {
           />
         </div>
       ) : (
-        <div className="flex h-[30vh] w-1/3 items-center justify-center rounded-lg bg-primary.main">
+        <div className="flex h-3/5 w-1/3 items-center justify-center rounded-lg bg-primary.main">
           <Typography variant="body1" textAlign="center" color="secondary.dark">
             Select Date
             <br /> to see anime
@@ -38,17 +38,17 @@ export const DisplayAnime = () => {
         </div>
       )}
       {selectedAnime?.name && (
-        <>
+        <div>
           <Typography variant="h6" textAlign="center" color="secondary.dark">
             {selectedAnime?.name}
           </Typography>
           <Typography variant="body1" color="secondary.dark">
             {stDay} {stMonth}, {stYear} - {edDay} {edMonth}, {edYear}
           </Typography>
-          <Typography variant="h6" color="secondary.dark">
+          <Typography variant="h6" color="secondary.dark" textAlign="center">
             Score: {selectedAnime.score}
           </Typography>
-        </>
+        </div>
       )}
     </div>
   );

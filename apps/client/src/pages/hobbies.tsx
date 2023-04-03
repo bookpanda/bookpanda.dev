@@ -25,7 +25,7 @@ const HobbiesPage: NextPage = () => {
         <WatchingAnime />
       </div>
       {breakLG && (
-        <div className="mb-40 h-[70vh] w-full">
+        <div className="mb-40 h-[80vh] w-full">
           <Typography
             variant="h4"
             fontWeight={600}
@@ -34,9 +34,9 @@ const HobbiesPage: NextPage = () => {
           >
             Anime Watch History
           </Typography>
-          <div className="rounded-lg bg-primary.light p-6">
+          <div className="h-[80vh] rounded-lg bg-primary.light p-6">
             <WatchCalendar />
-            <div className="mt-8 flex h-[45vh] w-full justify-evenly">
+            <div className="mt-8 flex h-4/5 w-full justify-evenly">
               <SelectYear />
               <DisplayAnime />
             </div>
