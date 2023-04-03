@@ -7,6 +7,9 @@ export const theme = createTheme({
     secondary: {
       main: "#ffffff",
     },
+    primary: {
+      main: colorPalette["gray-medium"],
+    },
   },
   breakpoints: {
     values: {
@@ -18,3 +21,7 @@ export const theme = createTheme({
     },
   },
 });
+
+const allThemes = {
+  default: theme,
+};
