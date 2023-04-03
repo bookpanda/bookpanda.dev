@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { createThemes } from "tw-colors";
+
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -17,5 +19,11 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    createThemes({
+      light: {
+        "a":"#333333"  
+      },
+    })
+  ]
 };

@@ -5,6 +5,7 @@ import {
 } from "@bookpanda/codegen";
 import { createContext, useContext } from "react";
 
+export type themeOptionsType = "default" | "dark";
 export type selectedYearType = number | null;
 export type selectedAnimeType = {
   name: string;
@@ -15,8 +16,8 @@ export type selectedAnimeType = {
 } | null;
 
 interface IAppContext {
-  theme: string;
-  setTheme: (newTheme: string) => void;
+  themeOptions: themeOptionsType;
+  setThemeOptions: (newTheme: themeOptionsType) => void;
   bannerData: GetBannerQueryResult | null;
   watchingData: GetWatchingAnimeQueryResult | null;
   completedData: GetCompletedAnimeQueryResult | null;
@@ -27,8 +28,8 @@ interface IAppContext {
 }
 
 export const AppContext = createContext<IAppContext>({
-  theme: "light",
-  setTheme: () => null,
+  themeOptions: "default",
+  setThemeOptions: () => null,
   bannerData: null,
   watchingData: null,
   completedData: null,

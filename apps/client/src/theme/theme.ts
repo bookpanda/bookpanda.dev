@@ -2,6 +2,16 @@ import { createTheme } from "@mui/material";
 
 import { colorPalette } from "./colors";
 
+const breakpoints = {
+  values: {
+    xs: 0,
+    sm: 640,
+    md: 768,
+    lg: 1024,
+    xl: 1280,
+  },
+};
+
 export const theme = createTheme({
   palette: {
     secondary: {
@@ -11,17 +21,10 @@ export const theme = createTheme({
       main: colorPalette["gray-medium"],
     },
   },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-    },
-  },
+  breakpoints,
 });
 
-const allThemes = {
+export const allThemes = {
   default: theme,
+  dark: theme,
 };

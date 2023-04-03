@@ -9,7 +9,12 @@ import {
 } from "@bookpanda/codegen";
 import { FC, PropsWithChildren, useState } from "react";
 
-import { AppContext, selectedAnimeType, selectedYearType } from "./appContext";
+import {
+  AppContext,
+  selectedAnimeType,
+  selectedYearType,
+  themeOptionsType,
+} from "./appContext";
 
 export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
   const bannerData = useGetBannerQuery({
@@ -35,7 +40,7 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
     },
   });
 
-  const [theme, setTheme] = useState<string>("light");
+  const [themeOptions, setThemeOptions] = useState<themeOptionsType>("default");
   const [selectedYear, setSelectedYear] = useState<selectedYearType>(2023);
   const [selectedAnime, setSelectedAnime] = useState<selectedAnimeType>({
     name: "",
@@ -48,8 +53,8 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
-        theme,
-        setTheme,
+        themeOptions,
+        setThemeOptions,
         bannerData,
         watchingData,
         completedData,
