@@ -9,7 +9,7 @@ import {
 import clsx from "clsx";
 import { FC, PropsWithChildren, ReactNode, useRef } from "react";
 import { useAppContext } from "src/core/contexts";
-import { allThemes, theme } from "src/theme";
+import { allThemes } from "src/theme";
 
 import { Footer } from "./Footer";
 import { NavBar } from "./NavBar";
@@ -21,15 +21,16 @@ interface ILayout extends PropsWithChildren {
 
 export const Layout: FC<ILayout> = ({ children, header }) => {
   const { themeOptions } = useAppContext();
+  const theme = allThemes[themeOptions as keyof typeof allThemes];
   const divRef = useRef(null);
   const breakMD = useMediaQuery(theme.breakpoints.up("md"));
   const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
-    <ThemeProvider theme={allThemes[themeOptions as keyof typeof allThemes]}>
+    <ThemeProvider theme={theme}>
       <div
         className={clsx(
-          "w-max-screen relative overflow-x-clip",
+          "w-max-screen relative z-10 overflow-x-clip bg-primary.main",
           `theme-${themeOptions}`
         )}
       >

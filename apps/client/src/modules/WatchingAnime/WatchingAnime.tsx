@@ -44,19 +44,18 @@ export const WatchingAnime = () => {
               src={d.image}
               width={200}
               height={200}
-              //   style={{
-              //     objectFit: "cover",
-              //     minHeight: "100%",
-              //     minWidth: "100%",
-              //   }}
               alt="animebanner"
               loader={() => d.image}
               className="mb-4"
             />
-            <Typography variant="h6" textAlign="center">
+            <Typography variant="h6" textAlign="center" color="secondary.dark">
               {d.title}
             </Typography>
-            <Typography variant="body1" textAlign="center">
+            <Typography
+              variant="body1"
+              textAlign="center"
+              color="secondary.dark"
+            >
               Episode: {d.progress} / {d.episodes}
             </Typography>
           </div>

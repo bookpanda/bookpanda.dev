@@ -6,7 +6,7 @@ const APIPage: NextPage = () => {
   return (
     <Layout header={<p>APIs</p>}>
       <div className="h-[70vh]">
-        <Typography>Coming Soon...</Typography>
+        <Typography color="secondary.dark">Coming Soon...</Typography>
       </div>
     </Layout>
   );

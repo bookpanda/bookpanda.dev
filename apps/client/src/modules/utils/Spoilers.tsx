@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
 import clsx from "clsx";
 import { FC, PropsWithChildren, useState } from "react";
-import { theme } from "src/theme";
 
 interface ISpoilers extends PropsWithChildren {
   variant:
@@ -28,16 +27,12 @@ export const Spoilers: FC<ISpoilers> = ({ children, variant }) => {
     <div
       className={clsx(
         "inline rounded-md p-1 transition-all hover:cursor-pointer",
-        spoil ? "bg-transparent" : "bg-gray-medium"
+        spoil ? "bg-transparent" : "bg-secondary.dark"
       )}
       onClick={() => setSpoil((s) => !s)}
       role="presentation"
     >
-      <Typography
-        variant={variant}
-        display="inline"
-        color={theme.palette.primary.main}
-      >
+      <Typography variant={variant} display="inline" color="secondary.dark">
         {children}
       </Typography>
     </div>

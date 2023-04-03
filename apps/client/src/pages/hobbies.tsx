@@ -14,14 +14,24 @@ const HobbiesPage: NextPage = () => {
   return (
     <Layout header={<p>Hobbies</p>}>
       <div className="mb-20">
-        <Typography variant="h4" fontWeight={600} marginBottom={3}>
+        <Typography
+          variant="h4"
+          fontWeight={600}
+          marginBottom={3}
+          color="secondary.dark"
+        >
           Currently Watching
         </Typography>
         <WatchingAnime />
       </div>
       {breakLG && (
         <div className="mb-40 h-[70vh] w-full">
-          <Typography variant="h4" fontWeight={600} marginBottom={3}>
+          <Typography
+            variant="h4"
+            fontWeight={600}
+            marginBottom={3}
+            color="secondary.dark"
+          >
             Anime Watch History
           </Typography>
           <WatchCalendar />

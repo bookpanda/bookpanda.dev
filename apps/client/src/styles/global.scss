@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-// .feed:hover .feedItem {
-//     transform: translateX(-25%);
-//  }
+.theme-default {
+    --primary-light: #FAFAFA;
+    --primary-main: #EDF1F5;
+    --primary-dark: #BDBDBD;
+    --secondary-light: #B91C1C;
+    --secondary-main: #1F2937;
+    --secondary-dark: #5C728A;
+}
 
-//  .feedItem:hover ~ .feedItem {
-//     transform: translateX(25%);
-//  }
+.theme-dark {
+    --primary-light: #151F2E;
+    --primary-main: #0B1622;
+    --primary-dark: #BDBDBD;
+    --secondary-light: #d93b3b;
+    --secondary-main: #1F2937;
+    --secondary-dark: #9FADBD;
+}
+
+.theme-subaru {
+    --color-primary: #166534;
+    --color-secondary: #bbf7d0;
+}

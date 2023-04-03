@@ -30,8 +30,8 @@ export const DisplayAnime = () => {
           />
         </div>
       ) : (
-        <div className="flex h-2/3 w-1/3 items-center justify-center rounded-lg bg-gray-100">
-          <Typography variant="body1" textAlign="center">
+        <div className="flex h-2/3 w-1/3 items-center justify-center rounded-lg bg-primary.light">
+          <Typography variant="body1" textAlign="center" color="secondary.dark">
             Select Date
             <br /> to see anime
           </Typography>
@@ -39,13 +39,15 @@ export const DisplayAnime = () => {
       )}
       {selectedAnime?.name && (
         <>
-          <Typography variant="h6" textAlign="center">
+          <Typography variant="h6" textAlign="center" color="secondary.dark">
             {selectedAnime?.name}
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" color="secondary.dark">
             {stDay} {stMonth}, {stYear} - {edDay} {edMonth}, {edYear}
           </Typography>
-          <Typography variant="h6">Score: {selectedAnime.score}</Typography>
+          <Typography variant="h6" color="secondary.dark">
+            Score: {selectedAnime.score}
+          </Typography>
         </>
       )}
     </div>
