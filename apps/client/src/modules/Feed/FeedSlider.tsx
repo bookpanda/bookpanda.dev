@@ -22,6 +22,7 @@ export const FeedSlider: FC = () => {
         showArrows={true}
         showStatus={false}
         showIndicators={false}
+        showThumbs={false}
         autoPlay
         transitionTime={700}
         interval={6000}
@@ -55,6 +56,7 @@ export const FeedSlider: FC = () => {
         showArrows={true}
         showStatus={false}
         showIndicators={false}
+        showThumbs={false}
         autoPlay
         transitionTime={700}
         interval={6000}
@@ -82,6 +84,7 @@ export const FeedSlider: FC = () => {
         showArrows={true}
         showStatus={false}
         showIndicators={false}
+        showThumbs={false}
         autoPlay
         transitionTime={700}
         interval={6000}

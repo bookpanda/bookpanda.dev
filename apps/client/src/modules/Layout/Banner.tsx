@@ -31,6 +31,8 @@ export const Banner: FC = () => {
           <Image
             loader={() => link}
             src={link}
+            unoptimized
+            priority
             style={{ objectFit: "cover" }}
             alt="banner"
             fill
