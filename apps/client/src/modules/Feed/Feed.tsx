@@ -8,7 +8,7 @@ import { FeedSlider } from "./FeedSlider";
 
 export const Feed: FC = () => {
   return (
-    <div className={clsx("mb-20 h-[57vh] w-full", styles.feed)}>
+    <div className={clsx("mb-20 h-[67vh] w-full", styles.feed)}>
       <Typography
         variant="h4"
         fontWeight={600}
@@ -17,7 +17,7 @@ export const Feed: FC = () => {
       >
         Projects
       </Typography>
-      <div className="mt-6 h-[25vh] w-full">
+      <div className="mt-6 h-[32vh] w-full rounded-lg md:bg-primary.light md:p-8">
         <FeedSlider />
       </div>
     </div>

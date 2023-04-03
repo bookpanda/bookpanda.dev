@@ -2,7 +2,7 @@ import { Button, Typography } from "@mui/material";
 import { useAppContext } from "src/core/contexts";
 
 export const SelectYear = () => {
-  const { setSelectedYear, selectedYear } = useAppContext();
+  const { selectedYear, setSelectedYear } = useAppContext();
   const stYear = new Date(2022, 1, 1).getFullYear();
   const edYear = new Date().getFullYear();
   const years = [];

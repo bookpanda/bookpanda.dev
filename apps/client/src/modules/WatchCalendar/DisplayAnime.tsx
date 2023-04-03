@@ -30,7 +30,7 @@ export const DisplayAnime = () => {
           />
         </div>
       ) : (
-        <div className="flex h-2/3 w-1/3 items-center justify-center rounded-lg bg-primary.light">
+        <div className="flex h-[30vh] w-1/3 items-center justify-center rounded-lg bg-primary.main">
           <Typography variant="body1" textAlign="center" color="secondary.dark">
             Select Date
             <br /> to see anime

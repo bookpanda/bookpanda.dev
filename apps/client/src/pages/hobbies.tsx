@@ -34,10 +34,12 @@ const HobbiesPage: NextPage = () => {
           >
             Anime Watch History
           </Typography>
-          <WatchCalendar />
-          <div className="mt-8 flex h-[50vh] w-full justify-evenly">
-            <SelectYear />
-            <DisplayAnime />
+          <div className="rounded-lg bg-primary.light p-6">
+            <WatchCalendar />
+            <div className="mt-8 flex h-[45vh] w-full justify-evenly">
+              <SelectYear />
+              <DisplayAnime />
+            </div>
           </div>
         </div>
       )}
