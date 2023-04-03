@@ -1,4 +1,4 @@
-import Layout from "$modules/Layout/Layout";
+import { Layout } from "$modules/Layout";
 import {
   DisplayAnime,
   SelectYear,

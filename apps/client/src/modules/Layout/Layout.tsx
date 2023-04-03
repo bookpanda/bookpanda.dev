@@ -4,15 +4,15 @@ import clsx from "clsx";
 import { FC, PropsWithChildren, ReactNode, useRef } from "react";
 import { theme } from "src/theme";
 
-import Footer from "./Footer";
-import { NavBar } from "./NavBar/NavBar";
+import { Footer } from "./Footer";
+import { NavBar } from "./NavBar";
 import { bannerHide } from "./NavBar/bannerClass";
 
 interface ILayout extends PropsWithChildren {
   header: ReactNode;
 }
 
-const Layout: FC<ILayout> = ({ children, header }) => {
+export const Layout: FC<ILayout> = ({ children, header }) => {
   const divRef = useRef(null);
   const breakMD = useMediaQuery(theme.breakpoints.up("md"));
   const breakLG = useMediaQuery(theme.breakpoints.up("lg"));

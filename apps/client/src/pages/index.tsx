@@ -1,5 +1,5 @@
-import Layout from "$modules/Layout/Layout";
-import { Feed } from "$modules/index";
+import { Feed } from "$modules/Feed";
+import { Layout } from "$modules/Layout";
 import { NextPage } from "next";
 
 const IndexPage: NextPage = () => {

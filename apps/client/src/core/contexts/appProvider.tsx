@@ -35,6 +35,7 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
     },
   });
 
+  const [theme, setTheme] = useState<string>("light");
   const [selectedYear, setSelectedYear] = useState<selectedYearType>(2023);
   const [selectedAnime, setSelectedAnime] = useState<selectedAnimeType>({
     name: "",
@@ -47,6 +48,8 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
+        theme,
+        setTheme,
         bannerData,
         watchingData,
         completedData,

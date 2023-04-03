@@ -1,5 +1,5 @@
 import { AboutMe } from "$modules/About";
-import Layout from "$modules/Layout/Layout";
+import { Layout } from "$modules/Layout";
 import { IconButton, Typography } from "@mui/material";
 import { NextPage } from "next";
 import Image from "next/image";
