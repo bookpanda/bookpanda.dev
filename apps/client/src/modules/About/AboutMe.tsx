@@ -7,7 +7,7 @@ export const AboutMe = () => {
       <Typography variant="h4" fontWeight={600} color="secondary.dark">
         Who am I?
       </Typography>
-      <div className="mt-4 bg-primary.light p-6">
+      <div className="mt-4 bg-primary.light p-6 transition-all">
         <Spoilers variant="h6">
           average anime-enjoying, nihongo-learning, left-handed,
           glasses-wearing, classes-with-no-attendance-skipping guy

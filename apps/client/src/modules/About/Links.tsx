@@ -13,7 +13,7 @@ export const Links = () => {
       <Typography variant="h4" fontWeight={600} color="secondary.dark">
         Links
       </Typography>
-      <div className="mt-4 flex items-center justify-evenly rounded-lg bg-primary.light pb-2 lg:w-1/3">
+      <div className="mt-4 flex items-center justify-evenly rounded-lg bg-primary.light pb-2 transition-all lg:w-1/3">
         <Link
           href={"https://github.com/bookpanda"}
           rel="noopener noreferrer"

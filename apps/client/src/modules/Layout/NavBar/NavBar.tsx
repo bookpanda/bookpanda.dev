@@ -3,28 +3,39 @@ import ApiIcon from "@mui/icons-material/Api";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import HomeIcon from "@mui/icons-material/Home";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
-import { FC } from "react";
+import { grey } from "@mui/material/colors";
+import { FC, useEffect, useState } from "react";
 
 import { NavExtLink } from "./NavExtLink";
 import { NavLink } from "./NavLink";
 
 export const NavBar: FC = () => {
+  const [pathname, setPathname] = useState("");
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setPathname(window.location.pathname);
+    }
+  }, []);
   return (
     <div className="mt-8 flex w-full justify-around md:w-3/5">
       <NavLink text="Home" link="/">
-        <HomeIcon color="secondary" />
+        <HomeIcon sx={{ color: pathname === "/" ? "white" : grey[400] }} />
       </NavLink>
       <NavLink text="About" link="/about">
-        <AccountCircleIcon color="secondary" />
+        <AccountCircleIcon
+          sx={{ color: pathname === "/about" ? "white" : grey[400] }}
+        />
       </NavLink>
       <NavExtLink text="Resume" link="https://resume.bookpanda.dev/">
-        <FolderSharedIcon color="secondary" />
+        <FolderSharedIcon sx={{ color: grey[400] }} />
       </NavExtLink>
       <NavLink text="Hobbies" link="/hobbies">
-        <LiveTvIcon color="secondary" />
+        <LiveTvIcon
+          sx={{ color: pathname === "/hobbies" ? "white" : grey[400] }}
+        />
       </NavLink>
       <NavLink text="APIs" link="/apis">
-        <ApiIcon color="secondary" />
+        <ApiIcon sx={{ color: pathname === "/apis" ? "white" : grey[400] }} />
       </NavLink>
     </div>
   );

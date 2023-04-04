@@ -42,7 +42,7 @@ export const DisplayAnime = () => {
           <Typography variant="h6" textAlign="center" color="secondary.dark">
             {selectedAnime?.name}
           </Typography>
-          <Typography variant="body1" color="secondary.dark">
+          <Typography variant="body1" textAlign="center" color="secondary.dark">
             {stDay} {stMonth}, {stYear} - {edDay} {edMonth}, {edYear}
           </Typography>
           <Typography variant="h6" color="secondary.dark" textAlign="center">

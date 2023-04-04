@@ -17,7 +17,7 @@ export const Feed: FC = () => {
       >
         Projects
       </Typography>
-      <div className="mt-6 h-[32vh] w-full rounded-lg md:bg-primary.light md:p-8">
+      <div className="mt-6 h-[32vh] w-full rounded-lg transition-all md:bg-primary.light md:p-8">
         <FeedSlider />
       </div>
     </div>

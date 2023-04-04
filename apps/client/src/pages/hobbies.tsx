@@ -34,7 +34,7 @@ const HobbiesPage: NextPage = () => {
           >
             Anime Watch History
           </Typography>
-          <div className="h-[80vh] rounded-lg bg-primary.light p-6">
+          <div className="h-[80vh] rounded-lg bg-primary.light p-6 transition-all">
             <WatchCalendar />
             <div className="mt-8 flex h-4/5 w-full justify-evenly">
               <SelectYear />

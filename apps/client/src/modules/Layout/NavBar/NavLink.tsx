@@ -22,7 +22,7 @@ export const NavLink: FC<INavLink> = ({ children, link, text }) => {
     <div
       className={clsx(
         "px-2 pb-2 sm:pb-0",
-        clsx(pathname === link && "border-b-2 border-red-700")
+        clsx(pathname === link && "border-b-2 border-secondary.light")
       )}
     >
       <Link href={link}>

@@ -30,7 +30,7 @@ export const Layout: FC<ILayout> = ({ children, header }) => {
     <ThemeProvider theme={theme}>
       <div
         className={clsx(
-          "w-max-screen relative z-10 overflow-x-clip bg-primary.main",
+          "w-max-screen relative z-10 overflow-x-clip bg-primary.main transition-all",
           `theme-${themeOptions}`
         )}
       >

@@ -33,7 +33,7 @@ export const WatchingAnime = () => {
     }
   }
   return (
-    <div className="flex flex-col justify-evenly rounded-lg bg-primary.light p-8 md:flex-row">
+    <div className="flex flex-col justify-evenly rounded-lg bg-primary.light p-8 transition-all md:flex-row">
       {data.current ? (
         data.current.map((d) => (
           <div
