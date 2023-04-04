@@ -1,4 +1,11 @@
-import { Theme, ThemeProvider, Tooltip } from "@mui/material";
+import {
+  Divider,
+  Paper,
+  Theme,
+  ThemeProvider,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import { FC } from "react";
 import { useAppContext } from "src/core/contexts";
 import { themeOptionsType } from "src/core/contexts/appContext";
@@ -9,7 +16,7 @@ interface IThemeOption {
 }
 
 export const ThemeOption: FC<IThemeOption> = ({ option, theme }) => {
-  const { setThemeOptions } = useAppContext();
+  const { handleThemeOptions } = useAppContext();
   return (
     <ThemeProvider theme={theme}>
       <Tooltip
@@ -17,13 +24,20 @@ export const ThemeOption: FC<IThemeOption> = ({ option, theme }) => {
         placement="top"
         title={option.charAt(0).toUpperCase() + option.slice(1)}
       >
-        <div
-          onClick={() => setThemeOptions(option)}
-          role="presentation"
-          className="h-8 w-8 bg-blue-100"
+        <Paper
+          onClick={() => handleThemeOptions(option)}
+          sx={{
+            padding: 1,
+            paddingTop: 2,
+            paddingRight: 2,
+            backgroundColor: "primary.main",
+            ":hover": { cursor: "pointer" },
+            color: "secondary.dark",
+          }}
         >
-          A
-        </div>
+          <Typography fontWeight={600}>A</Typography>
+          <Divider sx={{ backgroundColor: "secondary.light", height: 0.1 }} />
+        </Paper>
       </Tooltip>
     </ThemeProvider>
   );

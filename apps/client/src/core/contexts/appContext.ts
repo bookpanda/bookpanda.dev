@@ -17,7 +17,7 @@ export type selectedAnimeType = {
 
 interface IAppContext {
   themeOptions: themeOptionsType;
-  setThemeOptions: (newTheme: themeOptionsType) => void;
+  handleThemeOptions: (newTheme: themeOptionsType) => void;
   bannerData: GetBannerQueryResult | null;
   watchingData: GetWatchingAnimeQueryResult | null;
   completedData: GetCompletedAnimeQueryResult | null;
@@ -29,7 +29,7 @@ interface IAppContext {
 
 export const AppContext = createContext<IAppContext>({
   themeOptions: "default",
-  setThemeOptions: () => null,
+  handleThemeOptions: () => null,
   bannerData: null,
   watchingData: null,
   completedData: null,

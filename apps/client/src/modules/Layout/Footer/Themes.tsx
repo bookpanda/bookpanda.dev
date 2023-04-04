@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { theme } from "src/theme";
+import { darkTheme, theme } from "src/theme";
 
 import { ThemeOption } from "./ThemeOption";
 
@@ -7,7 +7,7 @@ export const Themes: FC = () => {
   return (
     <div className="mt-2 flex w-1/2 space-x-4">
       <ThemeOption option="default" theme={theme} />
-      <ThemeOption option="dark" theme={theme} />
+      <ThemeOption option="dark" theme={darkTheme} />
     </div>
   );
 };

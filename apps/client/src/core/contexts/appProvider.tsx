@@ -7,7 +7,7 @@ import {
   useGetCompletedAnimeQuery,
   useGetWatchingAnimeQuery,
 } from "@bookpanda/codegen";
-import { FC, PropsWithChildren, useState } from "react";
+import { FC, PropsWithChildren, useEffect, useState } from "react";
 
 import {
   AppContext,
@@ -50,11 +50,23 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
     score: 0,
   });
 
+  useEffect(() => {
+    const themeOp = localStorage.getItem("themeOptions");
+    if (themeOp) {
+      setThemeOptions(themeOp as themeOptionsType);
+    }
+  }, []);
+
+  const handleThemeOptions = (newTheme: themeOptionsType) => {
+    setThemeOptions(newTheme);
+    localStorage.setItem("themeOptions", newTheme);
+  };
+
   return (
     <AppContext.Provider
       value={{
         themeOptions,
-        setThemeOptions,
+        handleThemeOptions,
         bannerData,
         watchingData,
         completedData,
