@@ -33,7 +33,7 @@ export const projects = [
     image: autoPraeAksorn,
   },
   {
-    name: "Thinc's 1-week Hack to School Project",
+    name: "Thinc's 1-week Hack to School",
     details:
       "Make an education platform app within a week. My job in the team was making frontend.",
     url: "https://kita.cunny.dev",

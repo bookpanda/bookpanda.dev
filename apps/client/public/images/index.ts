@@ -8,3 +8,4 @@ export { default as bookpandaDev } from "./bookpanda.dev.png";
 export { default as anilist } from "./anilist.svg";
 export { default as github } from "./github.svg";
 export { default as linkedin } from "./linkedin.svg";
+export { default as adultFun } from "./adultFun.webp";
