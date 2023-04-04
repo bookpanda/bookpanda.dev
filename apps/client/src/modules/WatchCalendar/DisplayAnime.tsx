@@ -31,7 +31,7 @@ export const DisplayAnime = () => {
         </div>
       ) : (
         <div className="flex h-3/5 w-1/3 items-center justify-center rounded-lg bg-primary.main">
-          <Typography variant="body1" textAlign="center" color="secondary.dark">
+          <Typography variant="body1" textAlign="center" color="primary.dark">
             Select Date
             <br /> to see anime
           </Typography>

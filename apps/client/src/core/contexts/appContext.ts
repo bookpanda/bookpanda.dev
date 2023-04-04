@@ -5,7 +5,7 @@ import {
 } from "@bookpanda/codegen";
 import { createContext, useContext } from "react";
 
-export type themeOptionsType = "default" | "dark";
+export type themeOptionsType = "default" | "dark" | "subaru" | "bocchi";
 export type selectedYearType = number | null;
 export type selectedAnimeType = {
   name: string;

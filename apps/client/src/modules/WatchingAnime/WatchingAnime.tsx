@@ -48,14 +48,10 @@ export const WatchingAnime = () => {
               loader={() => d.image}
               className="mb-4"
             />
-            <Typography variant="h6" textAlign="center" color="secondary.dark">
+            <Typography variant="h6" textAlign="center" color="primary.dark">
               {d.title}
             </Typography>
-            <Typography
-              variant="body1"
-              textAlign="center"
-              color="secondary.dark"
-            >
+            <Typography variant="body1" textAlign="center" color="primary.dark">
               Episode: {d.progress} / {d.episodes}
             </Typography>
           </div>

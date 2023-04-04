@@ -27,12 +27,12 @@ export const Spoilers: FC<ISpoilers> = ({ children, variant }) => {
     <div
       className={clsx(
         "inline rounded-md p-1 transition-all hover:cursor-pointer",
-        spoil ? "bg-transparent" : "bg-secondary.dark"
+        spoil ? "bg-transparent" : "bg-primary.dark"
       )}
       onClick={() => setSpoil((s) => !s)}
       role="presentation"
     >
-      <Typography variant={variant} display="inline" color="secondary.dark">
+      <Typography variant={variant} display="inline" color="primary.dark">
         {children}
       </Typography>
     </div>

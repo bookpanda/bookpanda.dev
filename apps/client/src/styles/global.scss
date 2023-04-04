@@ -5,7 +5,7 @@
 .theme-default {
     --primary-light: #FAFAFA;
     --primary-main: #EDF1F5;
-    --primary-dark: #BDBDBD;
+    --primary-dark: #5C728A;
     --secondary-light: #B91C1C;
     --secondary-main: #1F2937;
     --secondary-dark: #5C728A;
@@ -14,13 +14,26 @@
 .theme-dark {
     --primary-light: #151F2E;
     --primary-main: #0B1622;
-    --primary-dark: #BDBDBD;
+    --primary-dark: #9FADBD;
     --secondary-light: #d93b3b;
-    --secondary-main: #1F2937;
+    --secondary-main: #7e8890;
     --secondary-dark: #9FADBD;
 }
 
 .theme-subaru {
-    --color-primary: #166534;
-    --color-secondary: #bbf7d0;
+    --primary-light: #F9F7F5;
+    --primary-main: #E5E5E5;
+    --primary-dark: #FFA656;
+    --secondary-light: #FFA656;
+    --secondary-main: #49484F;
+    --secondary-dark: #CB673D;
+}
+
+.theme-bocchi {
+    --primary-light: #f5dee4;
+    --primary-main: #F9ECEF;
+    --primary-dark: #cba602;
+    --secondary-light: #f3cb1d;
+    --secondary-main: #E3859F;
+    --secondary-dark: #31a4e3;
 }

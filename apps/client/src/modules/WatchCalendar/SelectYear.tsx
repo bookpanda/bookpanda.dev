@@ -11,7 +11,7 @@ export const SelectYear = () => {
   }
   return (
     <div className="flex w-1/6 flex-col items-center">
-      <Typography variant="h6" marginBottom={2} color="secondary.dark">
+      <Typography variant="h6" marginBottom={2} color="primary.dark">
         Select Year
       </Typography>
       {years.map((y) => (
@@ -21,8 +21,8 @@ export const SelectYear = () => {
           fullWidth
           sx={{
             marginBottom: 2,
-            color: "secondary.dark",
-            borderColor: y === selectedYear ? "secondary.dark" : "transparent",
+            color: "primary.dark",
+            borderColor: y === selectedYear ? "primary.dark" : "transparent",
           }}
           onClick={() => setSelectedYear(y)}
         >

@@ -10,7 +10,7 @@ export const colorPalette = {
     primary: {
       light: "#FAFAFA", //module
       main: "#EDF1F5", //background
-      dark: "#BDBDBD", //spoiler
+      dark: "#5C728A", //spoiler
     },
     secondary: {
       light: "#B91C1C", //menu highlight
@@ -22,12 +22,36 @@ export const colorPalette = {
     primary: {
       light: "#151F2E",
       main: "#0B1622",
-      dark: "#BDBDBD",
+      dark: "#9FADBD",
     },
     secondary: {
       light: "#d93b3b",
-      main: "#1F2937",
-      dark: "#9FADBD", //text
+      main: "#7e8890",
+      dark: "#9FADBD",
+    },
+  },
+  subaru: {
+    primary: {
+      light: "#F9F7F5", //module
+      main: "#E5E5E5", //background
+      dark: "#FFA656", //spoiler
+    },
+    secondary: {
+      light: "#FFA656", //menu highlight
+      main: "#49484F",
+      dark: "#CB673D", //text
+    },
+  },
+  bocchi: {
+    primary: {
+      light: "#f5dee4", //module
+      main: "#F9ECEF", //background
+      dark: "#cba602", //spoiler
+    },
+    secondary: {
+      light: "#f3cb1d", //menu highlight
+      main: "#E3859F",
+      dark: "#31a4e3", //text
     },
   },
 };

@@ -44,7 +44,41 @@ export const darkTheme = createTheme({
   breakpoints,
 });
 
+export const subaruTheme = createTheme({
+  palette: {
+    primary: {
+      light: colorPalette.subaru.primary.light,
+      main: colorPalette.subaru.primary.main,
+      dark: colorPalette.subaru.primary.dark,
+    },
+    secondary: {
+      light: colorPalette.subaru.secondary.light,
+      main: colorPalette.subaru.secondary.main,
+      dark: colorPalette.subaru.secondary.dark,
+    },
+  },
+  breakpoints,
+});
+
+export const bocchiTheme = createTheme({
+  palette: {
+    primary: {
+      light: colorPalette.bocchi.primary.light,
+      main: colorPalette.bocchi.primary.main,
+      dark: colorPalette.bocchi.primary.dark,
+    },
+    secondary: {
+      light: colorPalette.bocchi.secondary.light,
+      main: colorPalette.bocchi.secondary.main,
+      dark: colorPalette.bocchi.secondary.dark,
+    },
+  },
+  breakpoints,
+});
+
 export const allThemes = {
   default: theme,
   dark: darkTheme,
+  subaru: subaruTheme,
+  bocchi: bocchiTheme,
 };
