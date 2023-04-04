@@ -16,7 +16,7 @@ const HobbiesPage: NextPage = () => {
     <>
       <Head>
         <title>My hobbies</title>
-        <meta content="App description" name="description" />
+        <meta content="Mostly anime-related stuffs" name="description" />
       </Head>
       <Layout header={<p>Hobbies</p>}>
         <div className="mb-20">

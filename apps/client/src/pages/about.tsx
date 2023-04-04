@@ -8,7 +8,7 @@ const AboutPage: NextPage = () => {
     <>
       <Head>
         <title>About me</title>
-        <meta content="App description" name="description" />
+        <meta content="Who is bookpanda..." name="description" />
       </Head>
       <Layout header={<p>About me</p>}>
         <div className="">

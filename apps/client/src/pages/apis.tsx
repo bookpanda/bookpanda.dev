@@ -8,7 +8,7 @@ const APIPage: NextPage = () => {
     <>
       <Head>
         <title>APIs</title>
-        <meta content="App description" name="description" />
+        <meta content="My available APIs" name="description" />
       </Head>
       <Layout header={<p>APIs</p>}>
         <div className="h-[70vh]">

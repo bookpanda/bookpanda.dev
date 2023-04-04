@@ -14,7 +14,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>bookpanda</title>
-        <meta content="App description" name="description" />
+        <meta content="Idhibhat Pankam's personal website" name="description" />
       </Head>
 
       <ApolloProvider client={client}>
