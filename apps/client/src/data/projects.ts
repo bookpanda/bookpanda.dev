@@ -3,12 +3,20 @@ import {
   autoPraeAksorn,
   bookpandaDev,
   intaniaCal,
+  lyrics2Anki,
   remuNekoka,
   thai2kana,
   thincHackToSchool,
 } from "public/images";
 
 export const projects = [
+  {
+    name: "Lyrics2Anki",
+    details: "Makes Japanese Anki cards from ANY Spotify lyrics",
+    url: "https://lyrics2anki.vercel.app/",
+    github: "https://github.com/bookpanda/Lyrics2Anki",
+    image: lyrics2Anki,
+  },
   {
     name: "bookpanda.dev",
     details: "My personal website as gallery for my projects and resume.",
@@ -63,25 +71,4 @@ export const projects = [
     github: "https://github.com/bookpanda/Thai2Kana",
     image: thai2kana,
   },
-  //   {
-  //     name: "Thinc's 1-week Hack to School Project (Frontend)",
-  //     details:
-  //       "Make an education platform app within a week. My job in the team was making frontend.",
-  //     url: "kita.cunny.dev",
-  //     image: "/images/1.png",
-  //   },
-  //   {
-  //     name: "Thinc's 10-day Project (Frontend)",
-  //     details:
-  //       "Make a group project within 10 days. My team made a productivity app for creating tasks and doing pomodoro (I made the frontend).",
-  //     url: "github.com/Leomotors/producktivity",
-  //     image: "/images/1.png",
-  //   },
-  //   {
-  //     name: "WanchanBERTa-Thai-Grammarly",
-  //     details:
-  //       "NLP project using WanchanBERTa to correct misspelled Thai words. Dataset used is VISTEC-TP-TH-2021 dataset.",
-  //     url: "github.com/bookpanda/WanchanBERTa-Thai-Grammarly",
-  //     image: "/images/1.png",
-  //   },
 ];

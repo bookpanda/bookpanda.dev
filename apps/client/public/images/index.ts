@@ -5,6 +5,7 @@ export { default as aniTimeline } from "./aniTimeline.png";
 export { default as remuNekoka } from "./remuNekoka.gif";
 export { default as thincHackToSchool } from "./thincHackToSchool.png";
 export { default as bookpandaDev } from "./bookpanda.dev.png";
+export { default as lyrics2Anki } from "./lyrics2Anki.png";
 export { default as anilist } from "./anilist.svg";
 export { default as github } from "./github.svg";
 export { default as linkedin } from "./linkedin.svg";
