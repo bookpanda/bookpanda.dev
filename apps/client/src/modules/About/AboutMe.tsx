@@ -20,7 +20,7 @@ export const AboutMe = () => {
         >
           I am Idhibhat Pankam, currently in freshmen year, majoring in Computer
           Engineering, Chulalongkorn University. You can call me <i>Margin</i>{" "}
-          (Yes, that CSS property).
+          (yes, that CSS property).
         </Typography>
         <Typography
           variant="h6"

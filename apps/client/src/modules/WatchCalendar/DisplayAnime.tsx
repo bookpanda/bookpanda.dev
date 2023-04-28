@@ -13,7 +13,7 @@ export const DisplayAnime = () => {
   const edMonth = monthNames[selectedAnime?.ed.getMonth() ?? 0];
   const edYear = selectedAnime?.ed.getFullYear();
   return (
-    <div className="col flex h-3/4 w-1/2 flex-col items-center">
+    <div className="col flex h-full w-1/2">
       {selectedAnime?.image ? (
         <div className="mb-4 h-full w-1/3">
           <Image
@@ -22,7 +22,7 @@ export const DisplayAnime = () => {
             loader={() => selectedAnime?.image ?? ""}
             style={{
               objectFit: "cover",
-              minHeight: "100%",
+              // minHeight: "100%",
               minWidth: "100%",
             }}
             width={100}
@@ -30,23 +30,39 @@ export const DisplayAnime = () => {
           />
         </div>
       ) : (
-        <div className="flex h-3/5 w-1/3 items-center justify-center rounded-lg bg-primary.main">
-          <Typography variant="body1" textAlign="center" color="primary.dark">
+        <div className="flex h-4/5 w-1/3 items-center justify-center rounded-lg bg-primary.main">
+          <Typography
+            variant="h6"
+            textAlign="center"
+            color="primary.dark"
+            fontWeight={400}
+          >
             Select Date
             <br /> to see anime
           </Typography>
         </div>
       )}
       {selectedAnime?.name && (
-        <div>
-          <Typography variant="h6" textAlign="center" color="secondary.dark">
+        <div className="ml-8 w-1/2">
+          <Typography
+            variant="h5"
+            textAlign="start"
+            color="secondary.dark"
+            fontWeight={500}
+          >
             {selectedAnime?.name}
           </Typography>
-          <Typography variant="body1" textAlign="center" color="secondary.dark">
+          <Typography variant="body1" textAlign="start" color="secondary.dark">
             {stDay} {stMonth}, {stYear} - {edDay} {edMonth}, {edYear}
           </Typography>
-          <Typography variant="h6" color="secondary.dark" textAlign="center">
-            Score: {selectedAnime.score}
+          <Typography
+            variant="h3"
+            color="secondary.dark"
+            textAlign="start"
+            marginTop={4}
+            fontWeight={500}
+          >
+            {selectedAnime.score} / 10
           </Typography>
         </div>
       )}
