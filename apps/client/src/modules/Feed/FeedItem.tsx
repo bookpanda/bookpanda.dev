@@ -1,5 +1,3 @@
-"use client";
-
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {
   Card,
@@ -7,13 +5,11 @@ import {
   Collapse,
   IconButton,
   Typography,
-  useMediaQuery,
 } from "@mui/material";
 import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FC, useState } from "react";
-import { theme } from "src/theme";
 
 import styles from "./Feed.module.scss";
 
@@ -28,7 +24,6 @@ interface IFeedItem {
 }
 
 export const FeedItem: FC<IFeedItem> = ({ prop }) => {
-  const breakSM = useMediaQuery(theme.breakpoints.up("md"));
   const [show, setShow] = useState(false);
   return (
     <div
@@ -54,8 +49,8 @@ export const FeedItem: FC<IFeedItem> = ({ prop }) => {
             />
           </div>
         </Link>
-        <Collapse in={show || !breakSM} timeout={300}>
-          <CardContent>
+        <Collapse in={show} timeout={300}>
+          <CardContent sx={{ display: { xs: "none", sm: "block" } }}>
             <Typography gutterBottom variant="h6" component="div">
               {prop.name}
             </Typography>
@@ -69,6 +64,20 @@ export const FeedItem: FC<IFeedItem> = ({ prop }) => {
             </Link>
           </CardContent>
         </Collapse>
+
+        <CardContent sx={{ display: { xs: "block", sm: "none" } }}>
+          <Typography gutterBottom variant="h6" component="div">
+            {prop.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {prop.details}
+          </Typography>
+          <Link href={prop.github} rel="noopener noreferrer" target="_blank">
+            <IconButton sx={{ marginTop: 2 }} size="large">
+              <GitHubIcon />
+            </IconButton>
+          </Link>
+        </CardContent>
       </Card>
     </div>
   );

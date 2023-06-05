@@ -1,4 +1,4 @@
-import { Slide, Typography, useMediaQuery } from "@mui/material";
+import { Slide, Typography } from "@mui/material";
 import { FC, PropsWithChildren, useRef } from "react";
 import { theme } from "src/theme";
 
@@ -6,8 +6,6 @@ import { NavBar } from "./NavBar";
 
 export const PageTitle: FC<PropsWithChildren> = ({ children }) => {
   const divRef = useRef(null);
-  const breakMD = useMediaQuery(theme.breakpoints.up("md"));
-  const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <div className="mb-10 flex h-[42vh] flex-col">
       <NavBar />
@@ -19,19 +17,48 @@ export const PageTitle: FC<PropsWithChildren> = ({ children }) => {
           easing={{ enter: theme.transitions.easing.easeOut }}
           timeout={{ enter: theme.transitions.duration.complex }}
         >
-          {breakLG ? (
-            <Typography variant="h2" fontWeight={700} color="white">
-              {children}
-            </Typography>
-          ) : breakMD ? (
-            <Typography variant="h3" fontWeight={700} color="white">
-              {children}
-            </Typography>
-          ) : (
-            <Typography variant="h4" fontWeight={700} color="white">
-              {children}
-            </Typography>
-          )}
+          <Typography
+            variant="h2"
+            fontWeight={700}
+            color="white"
+            sx={{ display: { xs: "none", lg: "block" } }}
+          >
+            {children}
+          </Typography>
+        </Slide>
+
+        <Slide
+          direction="right"
+          in={true}
+          container={divRef.current}
+          easing={{ enter: theme.transitions.easing.easeOut }}
+          timeout={{ enter: theme.transitions.duration.complex }}
+        >
+          <Typography
+            variant="h3"
+            fontWeight={700}
+            color="white"
+            sx={{ display: { xs: "none", md: "block", lg: "none" } }}
+          >
+            {children}
+          </Typography>
+        </Slide>
+
+        <Slide
+          direction="right"
+          in={true}
+          container={divRef.current}
+          easing={{ enter: theme.transitions.easing.easeOut }}
+          timeout={{ enter: theme.transitions.duration.complex }}
+        >
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            color="white"
+            sx={{ display: { xs: "block", md: "none" } }}
+          >
+            {children}
+          </Typography>
         </Slide>
       </div>
     </div>
