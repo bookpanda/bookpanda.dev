@@ -4,18 +4,14 @@ import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import HomeIcon from "@mui/icons-material/Home";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import { grey } from "@mui/material/colors";
-import { FC, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { FC } from "react";
 
 import { NavExtLink } from "./NavExtLink";
 import { NavLink } from "./NavLink";
 
 export const NavBar: FC = () => {
-  const [pathname, setPathname] = useState("");
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setPathname(window.location.pathname);
-    }
-  }, []);
+  const pathname = usePathname();
   return (
     <div className="mt-8 flex w-full justify-around md:w-3/5">
       <NavLink text="Home" link="/">

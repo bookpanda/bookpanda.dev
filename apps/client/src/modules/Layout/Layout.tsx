@@ -1,30 +1,16 @@
 import { Banner } from "$modules/Layout/Banner";
-import {
-  Container,
-  Slide,
-  ThemeProvider,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import { Container, ThemeProvider } from "@mui/material";
 import clsx from "clsx";
-import { FC, PropsWithChildren, ReactNode, useRef } from "react";
+import { FC, PropsWithChildren } from "react";
 import { useAppContext } from "src/core/contexts";
 import { allThemes } from "src/theme";
 
 import { Footer } from "./Footer";
-import { NavBar } from "./NavBar";
 import { bannerHide } from "./NavBar/bannerClass";
 
-interface ILayout extends PropsWithChildren {
-  header: ReactNode;
-}
-
-export const Layout: FC<ILayout> = ({ children, header }) => {
+export const Layout: FC<PropsWithChildren> = ({ children }) => {
   const { themeOptions } = useAppContext();
   const theme = allThemes[themeOptions as keyof typeof allThemes];
-  const divRef = useRef(null);
-  const breakMD = useMediaQuery(theme.breakpoints.up("md"));
-  const breakLG = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
     <ThemeProvider theme={theme}>
@@ -48,35 +34,7 @@ export const Layout: FC<ILayout> = ({ children, header }) => {
           )}
         />
 
-        <Container maxWidth="xl">
-          <div className="mb-10 flex h-[42vh] flex-col">
-            <NavBar />
-            <div className="ml-8 flex h-[35vh] items-center" ref={divRef}>
-              <Slide
-                direction="right"
-                in={true}
-                container={divRef.current}
-                easing={{ enter: theme.transitions.easing.easeOut }}
-                timeout={{ enter: theme.transitions.duration.complex }}
-              >
-                {breakLG ? (
-                  <Typography variant="h2" fontWeight={700} color="white">
-                    {header}
-                  </Typography>
-                ) : breakMD ? (
-                  <Typography variant="h3" fontWeight={700} color="white">
-                    {header}
-                  </Typography>
-                ) : (
-                  <Typography variant="h4" fontWeight={700} color="white">
-                    {header}
-                  </Typography>
-                )}
-              </Slide>
-            </div>
-          </div>
-          {children}
-        </Container>
+        <Container maxWidth="xl">{children}</Container>
         <Footer />
       </div>
     </ThemeProvider>

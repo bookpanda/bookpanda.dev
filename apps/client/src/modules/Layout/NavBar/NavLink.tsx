@@ -2,7 +2,8 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import clsx from "clsx";
 import Link from "next/link";
-import { FC, PropsWithChildren, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { FC, PropsWithChildren } from "react";
 import { theme } from "src/theme";
 
 interface INavLink extends PropsWithChildren {
@@ -12,12 +13,7 @@ interface INavLink extends PropsWithChildren {
 
 export const NavLink: FC<INavLink> = ({ children, link, text }) => {
   const breakSM = useMediaQuery(theme.breakpoints.up("sm"));
-  const [pathname, setPathname] = useState("");
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setPathname(window.location.pathname);
-    }
-  }, []);
+  const pathname = usePathname();
   return (
     <div
       className={clsx(
