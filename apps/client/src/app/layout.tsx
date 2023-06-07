@@ -1,21 +1,13 @@
-"use client";
-
 import { Layout } from "$modules/Layout";
 import "$styles/global.scss";
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-// import { Metadata } from "next";
-import Head from "next/head";
+import { Metadata } from "next";
+import { ApolloWrapper } from "src/apollo/wrapper";
 import { AppProvider } from "src/core/contexts/appProvider";
 
-// export const metadata: Metadata = {
-//   title: "bookpanda",
-//   description: "Idhibhat Pankam's personal website",
-// };
-
-const client = new ApolloClient({
-  uri: process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT,
-  cache: new InMemoryCache(),
-});
+export const metadata: Metadata = {
+  title: "bookpanda",
+  description: "Idhibhat Pankam's personal website",
+};
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -24,17 +16,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <Head>
-        <title>bookpanda</title>
-        <meta content="Idhibhat Pankam's personal website" name="description" />
-      </Head>
       <html lang="en">
         <body>
-          <ApolloProvider client={client}>
+          <ApolloWrapper>
             <AppProvider>
               <Layout>{children}</Layout>
             </AppProvider>
-          </ApolloProvider>
+          </ApolloWrapper>
         </body>
       </html>
     </>
