@@ -1,7 +1,6 @@
 "use client";
 
 import { Feed } from "$modules/Feed";
-import { Layout } from "$modules/Layout";
 import { PageTitle } from "$modules/Layout/PageTitle";
 import { Typography } from "@mui/material";
 import { NextPage } from "next";
