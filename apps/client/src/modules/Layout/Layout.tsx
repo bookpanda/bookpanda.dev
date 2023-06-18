@@ -4,22 +4,23 @@ import { Banner } from "$modules/Layout/Banner";
 import { Container, ThemeProvider } from "@mui";
 import clsx from "clsx";
 import { FC, PropsWithChildren } from "react";
-import { useAppContext } from "src/core/contexts";
+import { useSelector } from "react-redux";
+import { getTheme } from "src/core/redux/slices/themeSlice/selectors";
 import { allThemes } from "src/theme";
 
 import { Footer } from "./Footer";
 import { bannerHide } from "./NavBar/bannerClass";
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
-  const { themeOptions } = useAppContext();
-  const theme = allThemes[themeOptions as keyof typeof allThemes];
+  const currentTheme = useSelector(getTheme);
+  const theme = allThemes[currentTheme as keyof typeof allThemes];
 
   return (
     <ThemeProvider theme={theme}>
       <div
         className={clsx(
           "w-max-screen relative z-10 overflow-x-clip bg-primary.main transition-all",
-          `theme-${themeOptions}`
+          `theme-${currentTheme}`
         )}
       >
         <Banner />

@@ -3,6 +3,7 @@ import "$styles/global.scss";
 import { Metadata } from "next";
 import { ApolloWrapper } from "src/apollo/wrapper";
 import { AppProvider } from "src/core/contexts/appProvider";
+import { ReduxProvider } from "src/core/redux";
 
 export const metadata: Metadata = {
   title: "bookpanda",
@@ -19,9 +20,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en">
         <body>
           <ApolloWrapper>
-            <AppProvider>
-              <Layout>{children}</Layout>
-            </AppProvider>
+            <ReduxProvider>
+              <AppProvider>
+                <Layout>{children}</Layout>
+              </AppProvider>
+            </ReduxProvider>
           </ApolloWrapper>
         </body>
       </html>

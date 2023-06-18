@@ -1,8 +1,9 @@
 import { Divider, Paper, ThemeProvider, Tooltip, Typography } from "@mui";
 import { Theme } from "@mui/material";
 import { FC } from "react";
-import { useAppContext } from "src/core/contexts";
+import { useDispatch } from "react-redux";
 import { themeOptionsType } from "src/core/contexts/appContext";
+import { themeSlice } from "src/core/redux";
 
 interface IThemeOption {
   theme: Theme;
@@ -10,7 +11,7 @@ interface IThemeOption {
 }
 
 export const ThemeOption: FC<IThemeOption> = ({ option, theme }) => {
-  const { handleThemeOptions } = useAppContext();
+  const dispatch = useDispatch();
   return (
     <ThemeProvider theme={theme}>
       <Tooltip
@@ -19,7 +20,9 @@ export const ThemeOption: FC<IThemeOption> = ({ option, theme }) => {
         title={option.charAt(0).toUpperCase() + option.slice(1)}
       >
         <Paper
-          onClick={() => handleThemeOptions(option)}
+          onClick={() => {
+            dispatch(themeSlice.actions.setTheme(option));
+          }}
           sx={{
             padding: 1,
             paddingTop: 2,
