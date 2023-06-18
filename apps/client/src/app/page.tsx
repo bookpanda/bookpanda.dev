@@ -1,5 +1,3 @@
-"use client";
-
 import { Feed } from "$modules/Feed";
 import { PageTitle } from "$modules/Layout/PageTitle";
 import { Typography } from "@mui";

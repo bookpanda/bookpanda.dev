@@ -1,5 +1,3 @@
-"use client";
-
 import { PageTitle } from "$modules/Layout/PageTitle";
 import { Typography } from "@mui";
 import { NextPage } from "next";

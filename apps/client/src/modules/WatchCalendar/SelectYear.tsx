@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Typography } from "@mui";
 import { useAppContext } from "src/core/contexts";
 

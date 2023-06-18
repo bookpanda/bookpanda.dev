@@ -1,3 +1,5 @@
+"use client";
+
 import { Tooltip, useMediaQuery } from "@mui";
 import clsx from "clsx";
 import { useAppContext } from "src/core/contexts";

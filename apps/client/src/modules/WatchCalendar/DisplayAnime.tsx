@@ -1,3 +1,5 @@
+"use client";
+
 import { Typography } from "@mui";
 import Image from "next/image";
 import { useAppContext } from "src/core/contexts";

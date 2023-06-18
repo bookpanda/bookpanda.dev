@@ -1,5 +1,3 @@
-"use client";
-
 import { AboutMe, Links } from "$modules/About";
 import { PageTitle } from "$modules/Layout/PageTitle";
 import { NextPage } from "next";

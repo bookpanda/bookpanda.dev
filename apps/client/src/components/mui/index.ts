@@ -14,6 +14,7 @@ export { Link as MuiLink } from "@mui/material";
 export {
   Divider,
   ThemeProvider,
+  createTheme,
   Tooltip,
   Skeleton,
   useMediaQuery,

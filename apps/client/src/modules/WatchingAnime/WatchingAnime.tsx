@@ -1,3 +1,5 @@
+"use client";
+
 import { Skeleton, Typography } from "@mui";
 import Image from "next/image";
 import { useRef } from "react";

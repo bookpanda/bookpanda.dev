@@ -1,3 +1,5 @@
+"use client";
+
 import { Typography } from "@mui";
 import clsx from "clsx";
 import { FC, PropsWithChildren, useState } from "react";

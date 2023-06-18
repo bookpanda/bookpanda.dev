@@ -1,4 +1,6 @@
-import { createTheme } from "@mui/material";
+"use client";
+
+import { createTheme } from "@mui";
 
 import { colorPalette } from "./colors";
 
