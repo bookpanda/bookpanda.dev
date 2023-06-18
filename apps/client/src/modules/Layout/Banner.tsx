@@ -1,4 +1,4 @@
-import { Fade, Skeleton } from "@mui/material";
+import { Fade, Skeleton } from "@mui";
 import clsx from "clsx";
 import Image from "next/image";
 import { FC } from "react";

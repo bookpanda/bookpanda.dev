@@ -1,7 +1,7 @@
 "use client";
 
 import { Banner } from "$modules/Layout/Banner";
-import { Container, ThemeProvider } from "@mui/material";
+import { Container, ThemeProvider } from "@mui";
 import clsx from "clsx";
 import { FC, PropsWithChildren } from "react";
 import { useAppContext } from "src/core/contexts";

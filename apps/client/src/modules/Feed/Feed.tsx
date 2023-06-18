@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography } from "@mui/material";
+import { Typography } from "@mui";
 import clsx from "clsx";
 import { FC } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

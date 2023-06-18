@@ -7,7 +7,7 @@ import {
   WatchCalendar,
 } from "$modules/WatchCalendar";
 import { WatchingAnime } from "$modules/WatchingAnime";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui";
 import { NextPage } from "next";
 
 const IndexPage: NextPage = () => {

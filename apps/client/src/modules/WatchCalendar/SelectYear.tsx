@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Typography } from "@mui";
 import { useAppContext } from "src/core/contexts";
 
 export const SelectYear = () => {

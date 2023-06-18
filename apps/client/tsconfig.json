@@ -3,15 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "$modules/*": [
-        "src/modules/*"
-      ],
-      "$styles/*": [
-        "src/styles/*"
-      ],
-      "$data/*": [
-        "src/data/*"
-      ]
+      "$modules/*": ["src/modules/*"],
+      "$styles/*": ["src/styles/*"],
+      "$data/*": ["src/data/*"],
+      "@mui": ["src/components/mui"]
     },
     "plugins": [
       {
@@ -20,13 +15,6 @@
     ],
     "strictNullChecks": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

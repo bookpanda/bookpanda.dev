@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui";
 import { grey } from "@mui/material/colors";
 import clsx from "clsx";
 import Link from "next/link";

@@ -1,5 +1,5 @@
 import { Spoilers } from "$modules/utils";
-import { Typography } from "@mui/material";
+import { Typography } from "@mui";
 
 export const AboutMe = () => {
   return (

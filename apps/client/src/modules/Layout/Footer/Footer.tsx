@@ -1,4 +1,4 @@
-import { Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui";
 import React, { FC } from "react";
 
 import { Themes } from "./Themes";

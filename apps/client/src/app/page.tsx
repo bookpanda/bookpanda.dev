@@ -2,7 +2,7 @@
 
 import { Feed } from "$modules/Feed";
 import { PageTitle } from "$modules/Layout/PageTitle";
-import { Typography } from "@mui/material";
+import { Typography } from "@mui";
 import { NextPage } from "next";
 import Image from "next/image";
 import { adultFun } from "public/images";

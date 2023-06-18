@@ -1,5 +1,5 @@
 import { projects } from "$data/projects";
-import { Box } from "@mui/material";
+import { Box } from "@mui";
 import clsx from "clsx";
 import { FC } from "react";
 import { Carousel } from "react-responsive-carousel";

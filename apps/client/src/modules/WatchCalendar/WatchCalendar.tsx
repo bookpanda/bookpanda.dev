@@ -1,4 +1,4 @@
-import { Tooltip, useMediaQuery } from "@mui/material";
+import { Tooltip, useMediaQuery } from "@mui";
 import clsx from "clsx";
 import { useAppContext } from "src/core/contexts";
 import { theme } from "src/theme";

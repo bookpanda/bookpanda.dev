@@ -1,4 +1,4 @@
-import { Slide, Typography } from "@mui/material";
+import { Slide, Typography } from "@mui";
 import { FC, PropsWithChildren, useRef } from "react";
 import { theme } from "src/theme";
 

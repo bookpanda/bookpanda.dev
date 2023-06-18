@@ -1,11 +1,5 @@
+import { Card, CardContent, Collapse, IconButton, Typography } from "@mui";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {
-  Card,
-  CardContent,
-  Collapse,
-  IconButton,
-  Typography,
-} from "@mui/material";
 import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";

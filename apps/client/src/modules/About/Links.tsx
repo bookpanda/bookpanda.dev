@@ -1,4 +1,4 @@
-import { IconButton, Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";

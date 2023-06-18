@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography } from "@mui";
 import Image from "next/image";
 import { useAppContext } from "src/core/contexts";
 

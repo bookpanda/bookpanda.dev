@@ -1,4 +1,4 @@
-import { Skeleton, Typography } from "@mui/material";
+import { Skeleton, Typography } from "@mui";
 import Image from "next/image";
 import { useRef } from "react";
 import { useAppContext } from "src/core/contexts";

@@ -1,11 +1,5 @@
-import {
-  Divider,
-  Paper,
-  Theme,
-  ThemeProvider,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Divider, Paper, ThemeProvider, Tooltip, Typography } from "@mui";
+import { Theme } from "@mui/material";
 import { FC } from "react";
 import { useAppContext } from "src/core/contexts";
 import { themeOptionsType } from "src/core/contexts/appContext";

@@ -1,7 +1,7 @@
 "use client";
 
 import { PageTitle } from "$modules/Layout/PageTitle";
-import { Typography } from "@mui/material";
+import { Typography } from "@mui";
 import { NextPage } from "next";
 
 const IndexPage: NextPage = () => {
