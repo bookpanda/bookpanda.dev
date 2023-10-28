@@ -18,9 +18,9 @@ export const AboutMe = () => {
           marginBottom={3}
           color="secondary.dark"
         >
-          I am Idhibhat Pankam, currently in freshmen year, majoring in Computer
-          Engineering, Chulalongkorn University. You can call me <i>Margin</i>{" "}
-          (yes, that CSS property).
+          I am Idhibhat Pankam, currently in sophomore year, majoring in
+          Computer Engineering, Chulalongkorn University. You can call me{" "}
+          <i>Margin</i> (yes, that CSS property).
         </Typography>
         <Typography
           variant="h6"
@@ -29,8 +29,8 @@ export const AboutMe = () => {
           color="secondary.dark"
         >
           I love creating side projects, especically web applications, to solve
-          problems. I specialize in Nextjs/Reactjs, Tailwindcss, MaterialUI, but
-          other cool technologies are also welcomed.
+          problems. I specialize in fullstack development, but other cool
+          technologies are also welcomed.
         </Typography>
       </div>
     </div>

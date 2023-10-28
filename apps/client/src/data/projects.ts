@@ -1,12 +1,12 @@
 import {
-  aniTimeline,
   autoPraeAksorn,
   bookpandaDev,
   intaniaCal,
   lyrics2Anki,
+  miteKure,
+  praeAksornSim,
   remuNekoka,
-  thai2kana,
-  thincHackToSchool,
+  saladCroissant,
 } from "public/images";
 
 export const projects = [
@@ -18,19 +18,18 @@ export const projects = [
     image: lyrics2Anki,
   },
   {
-    name: "bookpanda.dev",
-    details: "My personal website as gallery for my projects and resume.",
-    url: "https://bookpanda.dev",
-    github: "https://github.com/bookpanda/bookpanda.dev",
-    image: bookpandaDev,
+    name: "🥗 🥐 Kurikkaa",
+    details: "Who would win: 🥗 VS 🥐. The race is ON!",
+    url: "https://salad-croissant-kurikkaa.vercel.app/",
+    github: "https://github.com/bookpanda/salad-croissant-kurikkaa",
+    image: saladCroissant,
   },
   {
-    name: "Intania Department Calculator",
-    details:
-      "Calculates your grades to assess your chance of getting into desired engineering department.",
-    url: "https://intania-department-calculator.vercel.app",
-    github: "https://github.com/bookpanda/intania-department-calculator",
-    image: intaniaCal,
+    name: "見てくれ！",
+    details: "ああぁぁぁぁぁぁぁぁ　見てくれ！",
+    url: "https://mite-kure.bookpanda.dev/",
+    github: "https://github.com/bookpanda/mite-kure",
+    image: miteKure,
   },
   {
     name: "AutoPraeAksorn",
@@ -41,12 +40,26 @@ export const projects = [
     image: autoPraeAksorn,
   },
   {
-    name: "Thinc's 1-week Hack to School",
+    name: "bookpanda.dev",
+    details: "My personal website as gallery for my projects and resume.",
+    url: "https://bookpanda.dev",
+    github: "https://github.com/bookpanda/bookpanda.dev",
+    image: bookpandaDev,
+  },
+  {
+    name: "PraeAksornSimulator",
+    details: "Game project about simulating card stunts in a football match.",
+    url: "https://github.com/bookpanda/PraeAksornSimulator",
+    github: "https://github.com/bookpanda/PraeAksornSimulator",
+    image: praeAksornSim,
+  },
+  {
+    name: "Intania Department Calculator",
     details:
-      "Make an education platform app within a week. My job in the team was making frontend.",
-    url: "https://kita.cunny.dev",
-    github: "https://github.com/thinc-org/hacktoschool-kitakita",
-    image: thincHackToSchool,
+      "Calculates your grades to assess your chance of getting into desired engineering department.",
+    url: "https://intania-department-calculator.vercel.app",
+    github: "https://github.com/bookpanda/intania-department-calculator",
+    image: intaniaCal,
   },
   {
     name: "レム　ゴロゴロ　猫か",
@@ -54,21 +67,5 @@ export const projects = [
     url: "https://remu-goro-nekoka.vercel.app",
     github: "https://github.com/bookpanda/remu-goro-nekoka",
     image: remuNekoka,
-  },
-  {
-    name: "AniTimeline",
-    details:
-      "A webapp that shows data from the AniList's public API by user's ID.",
-    url: "https://ani-timeline-client.vercel.app",
-    github: "https://github.com/bookpanda/AniTimeline",
-    image: aniTimeline,
-  },
-  {
-    name: "Thai2Kana",
-    details:
-      "A program that tries to convert the Thai language into Katakana script.",
-    url: "https://thai2-kana-client.vercel.app",
-    github: "https://github.com/bookpanda/Thai2Kana",
-    image: thai2kana,
   },
 ];
