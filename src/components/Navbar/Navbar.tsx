@@ -1,8 +1,8 @@
 import { translate } from "@/cms/Translate";
 import { texts } from "@/cms/texts";
-import { Home } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
+import { FaHome } from "react-icons/fa";
 import { PickLang } from "../PickLang/PickLang";
 import { Button } from "../ui/button";
 
@@ -20,7 +20,7 @@ export const Navbar: FC<NavbarProps> = ({ title }) => {
         <div className="flex w-[50%] justify-end">
           <Link href="/">
             <Button variant="ghost" className="hover:bg-[#47474720]">
-              <Home className="mr-3 h-6 w-6 text-white" />
+              <FaHome className="mr-3 h-6 w-6 text-white" />
               <h2 className="text-white">{translate(texts.navbar.home)}</h2>
             </Button>
           </Link>
