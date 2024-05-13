@@ -10,7 +10,7 @@ import styles from "./styles.module.css";
 const Home = () => {
   return (
     <div className={clsx("h-screen w-screen", styles.gradientBg)}>
-      <div className="flex h-16 w-screen items-center justify-end pr-8">
+      <div className="flex h-14 w-screen items-center justify-end pr-8">
         <PickLang />
       </div>
       <div className="flex h-[calc(100vh-4rem)] w-full flex-col items-end justify-center pr-[5%]">
