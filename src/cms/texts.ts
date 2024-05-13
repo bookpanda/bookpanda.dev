@@ -9,4 +9,10 @@ export const texts = {
       jp: "プロジェクト",
     },
   },
+  notFound: {
+    returnHome: {
+      en: "return home",
+      jp: "ホームに戻る",
+    },
+  },
 };
