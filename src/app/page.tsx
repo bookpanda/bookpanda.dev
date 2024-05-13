@@ -1,7 +1,7 @@
 "use client";
 
+import { translate } from "@/cms/Translate";
 import { texts } from "@/cms/texts";
-import { translate } from "@/cms/translate";
 import { PickLang } from "@/components/PickLang/PickLang";
 import clsx from "clsx";
 import Link from "next/link";
