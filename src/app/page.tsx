@@ -9,13 +9,13 @@ import styles from "./styles.module.css";
 
 const Home = () => {
   return (
-    <div className={clsx("relative h-screen w-screen", styles.gradientBg)}>
-      <div className="absolute right-[5%] top-[3%]">
+    <div className={clsx("h-screen w-screen", styles.gradientBg)}>
+      <div className="flex h-16 w-screen items-center justify-end pr-8">
         <PickLang />
       </div>
-      <div className="flex h-full w-full flex-col items-end justify-center pr-[5%]">
+      <div className="flex h-[calc(100vh-4rem)] w-full flex-col items-end justify-center pr-[5%]">
         <h1 className="text-lg text-white">
-          <Link href="https://www.bookpanda.dev/">bookpanda.dev</Link>
+          <Link href="/">bookpanda.dev</Link>
         </h1>
         <p className="text-white hover:underline">
           <Link href="https://resume.bookpanda.dev/" target="_blank">

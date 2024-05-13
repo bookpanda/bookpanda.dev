@@ -15,4 +15,10 @@ export const texts = {
       jp: "ホームに戻る",
     },
   },
+  navbar: {
+    home: {
+      en: "home",
+      jp: "ホーム",
+    },
+  },
 };
