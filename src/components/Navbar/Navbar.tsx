@@ -12,7 +12,7 @@ interface NavbarProps {
 
 export const Navbar: FC<NavbarProps> = ({ title }) => {
   return (
-    <nav className="sticky top-0 flex h-14 w-screen items-center justify-between bg-[#47474770] pl-[20%]">
+    <nav className="sticky top-0 z-10 flex h-14 w-screen items-center justify-between bg-[#47474770] pl-[20%]">
       <div className="flex w-[70%]">
         <div className="flex w-[50%] items-center">
           <h1 className="text-xl text-white">{title}</h1>
