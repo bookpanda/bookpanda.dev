@@ -1,5 +1,6 @@
 import { texts } from "@/cms/texts";
 import { CmsText, translate } from "@/cms/translate";
+import { PickLang } from "@/components/PickLang/PickLang";
 import clsx from "clsx";
 import Link from "next/link";
 import styles from "./styles.module.css";
@@ -9,7 +10,10 @@ const Home = () => {
   const text = (input: CmsText) => translate(input, language);
 
   return (
-    <div className={clsx("h-screen w-screen", styles.gradientBg)}>
+    <div className={clsx("relative h-screen w-screen", styles.gradientBg)}>
+      <div className="absolute right-[5%] top-[3%]">
+        <PickLang />
+      </div>
       <div className="flex h-full w-full flex-col items-end justify-center pr-[5%]">
         <h1 className="text-lg text-white">
           <Link href="https://www.bookpanda.dev/">bookpanda.dev</Link>
