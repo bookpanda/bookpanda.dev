@@ -1,14 +1,13 @@
+"use client";
+
 import { texts } from "@/cms/texts";
-import { CmsText, translate } from "@/cms/translate";
+import { translate } from "@/cms/translate";
 import { PickLang } from "@/components/PickLang/PickLang";
 import clsx from "clsx";
 import Link from "next/link";
 import styles from "./styles.module.css";
 
 const Home = () => {
-  const language = "jp";
-  const text = (input: CmsText) => translate(input, language);
-
   return (
     <div className={clsx("relative h-screen w-screen", styles.gradientBg)}>
       <div className="absolute right-[5%] top-[3%]">
@@ -20,12 +19,12 @@ const Home = () => {
         </h1>
         <p className="text-white">
           <Link href="https://resume.bookpanda.dev/" target="_blank">
-            {text(texts.home.resume)}
+            {translate(texts.home.resume)}
           </Link>
         </p>
         <p className="text-white">
           <Link href="/projects" target="_blank">
-            {text(texts.home.projects)}
+            {translate(texts.home.projects)}
           </Link>
         </p>
       </div>
