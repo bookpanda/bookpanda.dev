@@ -17,15 +17,13 @@ const Home = () => {
         <h1 className="text-lg text-white">
           <Link href="https://www.bookpanda.dev/">bookpanda.dev</Link>
         </h1>
-        <p className="text-white">
+        <p className="text-white hover:underline">
           <Link href="https://resume.bookpanda.dev/" target="_blank">
             {translate(texts.home.resume)}
           </Link>
         </p>
-        <p className="text-white">
-          <Link href="/projects" target="_blank">
-            {translate(texts.home.projects)}
-          </Link>
+        <p className="text-white hover:underline">
+          <Link href="/projects">{translate(texts.home.projects)}</Link>
         </p>
       </div>
     </div>
