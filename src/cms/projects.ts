@@ -128,8 +128,8 @@ export const projectList: ProjectInst[] = [
       jp: "マイグレーダーリスト",
     },
     description: {
-      en: "MyGraderList is a web app that lets students assess the difficulties and worthiness of each DSA grader problem in their respective courses.",
-      jp: "MyGraderList は、学生がそれぞれのコースの DSA 採点者の問題の難しさと価値を評価できる Web アプリです。",
+      en: "MyGraderList is a web app for assessing the difficulties of each DSA grader problem.",
+      jp: "MyGraderList は、各 DSA グレーダー問題の難易度を評価するための Web アプリです。",
     },
     type: "personal",
     stack: ["React", "Go", "gRPC", "mySQL", "redis"],
@@ -158,8 +158,8 @@ export const projectList: ProjectInst[] = [
       jp: "PraeAksornシミュレータ",
     },
     description: {
-      en: "PraeAksorn Simulator is inspired by real-life card stunt, which involves assembling a large number of colored papers together to form an image.",
-      jp: "「PraeAksornシミュレータ」は、多数の色紙を組み合わせて画像を形成する実際のカード スタントからインスピレーションを得ています。",
+      en: "PraeAksorn Simulator is based on real-life card stunt, which basically is flipping colored papers together to form an image.",
+      jp: "PraeAksornシミュレータは、基本的には画像を形成するために一緒に色付きの紙を反転させるリアルなカードスタントに基づいています。",
     },
     type: "team",
     stack: ["Java", "JavaFX"],
@@ -173,8 +173,8 @@ export const projectList: ProjectInst[] = [
       jp: "インタニア部門計算機",
     },
     description: {
-      en: "Calculates your likelihood of getting into your desired engineering departments in Chulalongkorn University.",
-      jp: "チュラロンコン大学の理工学部門に入る可能性を計算します。",
+      en: "Calculates your likelihood of getting into your desired engineering departments.",
+      jp: "大学の理工学部門に入る可能性を計算します。",
     },
     type: "personal",
     stack: ["React", "material-ui"],
