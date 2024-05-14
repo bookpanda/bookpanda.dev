@@ -1,1 +1,0 @@
-export { WatchingAnime } from "./WatchingAnime";
