@@ -1,7 +1,8 @@
 import { languageSlice } from "@/components/PickLang/languageSlice";
+import { projectSlice } from "@/components/Project/projectSlice";
 import { combineSlices, configureStore } from "@reduxjs/toolkit";
 
-const rootReducer = combineSlices(languageSlice);
+const rootReducer = combineSlices(languageSlice, projectSlice);
 
 export const makeStore = () => {
   return configureStore({
