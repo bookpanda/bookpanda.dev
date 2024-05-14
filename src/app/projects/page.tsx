@@ -17,7 +17,7 @@ interface ProjectsGridProps {
 }
 
 const ProjectsGrid: FC<ProjectsGridProps> = ({ projects }) => (
-  <div className="mx-[10%] my-[2vh] grid w-[80%] grid-cols-1 justify-between gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+  <div className="mx-[10%] my-[2vh] grid w-[80%] grid-cols-1 justify-between gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
     {projects.map((project) => (
       <Project key={project.image} project={project} />
     ))}

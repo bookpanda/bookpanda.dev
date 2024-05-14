@@ -32,8 +32,8 @@ export const projectList: ProjectInst[] = [
       jp: "アニメスタッツ",
     },
     description: {
-      en: "When engineering managers are recruiting, if they happen to have the same taste as you, you're in luck. So you'd better not rate objectively mid stuffs (e.g. SAO 😭) more than 8.",
-      jp: "エンジニアリングマネージャーが採用を行う際、あなたと同じ趣味を持っている場合、あなたは幸運です。 ですから、客観的に中程度のもの (例: SAO 😭) を 8 よりも高く評価しない方がよいでしょう。",
+      en: "When engineering managers are recruiting, if they happen to have the same taste as you, you're in luck.",
+      jp: "エンジニアリングマネージャーが採用を行う際、あなたと同じ趣味を持っている場合、あなたは幸運です。",
     },
     type: "personal",
     stack: ["github-actions", "GraphQL"],
