@@ -15,6 +15,16 @@ export const texts = {
       jp: "ホームに戻る",
     },
   },
+  projects: {
+    personal: {
+      en: "personal projects",
+      jp: "個人プロジェクト",
+    },
+    team: {
+      en: "team projects",
+      jp: "チームプロジェクト",
+    },
+  },
   navbar: {
     home: {
       en: "home",

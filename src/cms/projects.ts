@@ -58,6 +58,21 @@ export const projectList: ProjectInst[] = [
   },
   {
     title: {
+      en: "Johnjud (backend)",
+      jp: "Johnjud（バックエンド）",
+    },
+    description: {
+      en: "Johnjud-backend handles data management and business logic for the Johnjud project.",
+      jp: "Johnjud-backend は、Johnjud プロジェクトのデータ管理とビジネスロジックを処理します。",
+    },
+    type: "team",
+    stack: ["Go", "gRPC", "postgreSQL", "redis", "minio"],
+    date: new Date(2024, 3),
+    image: "praeAksornSim.webp",
+    url: ["https://github.com/isd-sgcu/johnjud-backend"],
+  },
+  {
+    title: {
       en: "angryfern",
       jp: "怒っているフェルン",
     },
