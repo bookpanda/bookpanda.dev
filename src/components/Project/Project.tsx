@@ -37,7 +37,7 @@ export const Project: FC<ProjectProps> = ({ project }) => {
           ))}
         </div>
       </div>
-      <div className="h-[90%]">
+      <div className="h-[25vh]">
         <Image
           src={`/projects/${project.image}`}
           alt="proj_img"
@@ -49,6 +49,7 @@ export const Project: FC<ProjectProps> = ({ project }) => {
             width: "100%",
           }}
           className="rounded-t-md"
+          unoptimized
         />
       </div>
       <div className="mt-2 w-full px-4">
