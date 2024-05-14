@@ -37,13 +37,20 @@ export const Project: FC<ProjectProps> = ({ project }) => {
           ))}
         </div>
       </div>
-      <Image
-        src={`/projects/${project.image}`}
-        alt="proj_img"
-        width={400}
-        height={200}
-        className="rounded-t-md"
-      />
+      <div className="h-[90%] bg-red-100">
+        <Image
+          src={`/projects/${project.image}`}
+          alt="proj_img"
+          width={300}
+          height={200}
+          style={{
+            objectFit: "cover",
+            height: "100%",
+            width: "100%",
+          }}
+          className="rounded-t-md"
+        />
+      </div>
       <div className="mt-2 w-full px-4">
         <h2 className="text-lg text-white">{translate(project.title)}</h2>
       </div>
