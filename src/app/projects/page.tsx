@@ -10,7 +10,7 @@ import styles from "./styles.module.css";
 
 const ProjectsPage = () => {
   return (
-    <div className={clsx("relative min-h-screen w-screen", styles.gradientBg)}>
+    <div className={clsx("relative min-h-screen w-screen", styles.woodenBg)}>
       <Navbar title={translate(texts.home.projects)} />
       <div className="mx-[10%] my-[5vh] grid w-[80%] grid-cols-4 justify-between gap-4">
         <Project />
