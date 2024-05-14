@@ -37,7 +37,7 @@ export const Project: FC<ProjectProps> = ({ project }) => {
           ))}
         </div>
       </div>
-      <div className="h-[90%] bg-red-100">
+      <div className="h-[90%]">
         <Image
           src={`/projects/${project.image}`}
           alt="proj_img"
