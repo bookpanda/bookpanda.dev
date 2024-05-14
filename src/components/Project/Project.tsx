@@ -29,15 +29,15 @@ export const Project: FC<ProjectProps> = ({ project }) => {
             })}
           </p>
         </div>
-        <div className="flex w-full justify-end space-x-4 pb-4 pr-4">
-          {project.url.map((url, idx) => (
+        <div className="flex w-full justify-end space-x-4 pb-2 pr-2">
+          {project.url.map((url) => (
             <Link key={url} href={url} target="_blank">
               <FaGithub className="h-8 w-8 text-white hover:cursor-pointer" />
             </Link>
           ))}
         </div>
       </div>
-      <div className="h-[25vh]">
+      <div className="h-[27vh]">
         <Image
           src={`/projects/${project.image}`}
           alt="proj_img"
