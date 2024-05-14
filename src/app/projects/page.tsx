@@ -16,9 +16,16 @@ const ProjectsPage = () => {
     <div className={clsx("relative min-h-screen w-screen", styles.woodenBg)}>
       <Navbar title={translate(texts.home.projects)} />
       <div className="mx-[10%] my-[5vh] grid w-[80%] grid-cols-4 justify-between gap-4">
-        {projects.map((project) => (
-          <Project key={project.image} project={project} />
-        ))}
+        {projects.map((project) => {
+          if (project.type === "personal")
+            return <Project key={project.image} project={project} />;
+        })}
+      </div>
+      <div className="mx-[10%] my-[5vh] grid w-[80%] grid-cols-4 justify-between gap-4">
+        {projects.map((project) => {
+          if (project.type === "team")
+            return <Project key={project.image} project={project} />;
+        })}
       </div>
       <Footer />
     </div>

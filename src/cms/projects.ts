@@ -3,6 +3,7 @@ type LangChoice = { en: string; jp: string };
 export interface ProjectInst {
   title: LangChoice;
   description: LangChoice;
+  type: "personal" | "team";
   stack: string[];
   date: Date;
   image: string;
@@ -19,6 +20,7 @@ export const projectList: ProjectInst[] = [
       en: "",
       jp: "",
     },
+    type: "personal",
     stack: [],
     date: new Date(2023, 5),
     image: "",
@@ -33,6 +35,7 @@ export const projectList: ProjectInst[] = [
       en: "When engineering managers are recruiting, if they happen to have the same taste as you, you're in luck. So you'd better not rate objectively mid stuffs (e.g. SAO 😭) more than 8.",
       jp: "エンジニアリングマネージャーが採用を行う際、あなたと同じ趣味を持っている場合、あなたは幸運です。 ですから、客観的に中程度のもの (例: SAO 😭) を 8 よりも高く評価しない方がよいでしょう。",
     },
+    type: "personal",
     stack: ["github-actions", "GraphQL"],
     date: new Date(2024, 4),
     image: "animeStats.webp",
@@ -47,6 +50,7 @@ export const projectList: ProjectInst[] = [
       en: "Making a bot with the personality of that one friend who always has something to say without filters.",
       jp: "常にフィルターなしで何かを言うあの友達の性格を持つボットを作成する。",
     },
+    type: "personal",
     stack: [],
     date: new Date(2024, 4),
     image: "samlamBot.webp",
@@ -61,6 +65,7 @@ export const projectList: ProjectInst[] = [
       en: "try clicking it fast enough, then something will happen",
       jp: "十分に速くクリックしてみてください、それから何かが起こります。",
     },
+    type: "personal",
     stack: ["React", "Redux", "Go", "gin", "postgreSQL"],
     date: new Date(2024, 3),
     image: "angryfern.webp",
@@ -78,6 +83,7 @@ export const projectList: ProjectInst[] = [
       en: "Makes Japanese Anki cards from ANY Spotify lyrics.",
       jp: "Spotifyの歌詞から日本語のAnkiカードを作成します。",
     },
+    type: "personal",
     stack: ["React", "AWS-Lambda", "Python", "tokenizer"],
     date: new Date(2024, 2),
     image: "lyrics2anki.webp",
@@ -95,6 +101,7 @@ export const projectList: ProjectInst[] = [
       en: "Twitter bot that tweets a random shower thought from the list of quotes every 24 hours.",
       jp: "引用リストからランダムなシャワーの思考をツイートする Twitter ボット。",
     },
+    type: "personal",
     stack: ["Go", "AWS-Lambda", "DynamoDB", "Twitter API"],
     date: new Date(2023, 12),
     image: "snappingThoughts.webp",
@@ -109,6 +116,7 @@ export const projectList: ProjectInst[] = [
       en: "Aaaahhh look at this! generator",
       jp: "ああぁぁぁぁ　見てくれ！ ジェネレーター",
     },
+    type: "personal",
     stack: ["React", "react-player"],
     date: new Date(2023, 9),
     image: "miteKure.gif",
@@ -123,6 +131,7 @@ export const projectList: ProjectInst[] = [
       en: "PraeAksorn Simulator is inspired by real-life card stunt, which involves assembling a large number of colored papers together to form an image. The objective of this game is to allow you to experience card stunts and form an image within a time limit.",
       jp: "「PraeAksornシミュレータ」は、多数の色紙を組み合わせて画像を形成する実際のカード スタントからインスピレーションを得ています。 このゲームの目的は、制限時間内にカードスタントを体験し、イメージを形成することです。",
     },
+    type: "team",
     stack: ["Java", "JavaFX"],
     date: new Date(2023, 5),
     image: "praeAksornSim.webp",
@@ -137,6 +146,7 @@ export const projectList: ProjectInst[] = [
       en: "Calculates your likelihood of getting into your desired engineering departments in Chulalongkorn University.",
       jp: "チュラロンコン大学の理工学部門に入る可能性を計算します。",
     },
+    type: "personal",
     stack: ["React", "material-ui"],
     date: new Date(2023, 5),
     image: "intaniaCal.webp",
@@ -151,6 +161,7 @@ export const projectList: ProjectInst[] = [
       en: "This webapp will help create 'Kradat Tak' or instructions on what color to flip for each person in order to orchestrate card stunts. You can turn virtually any image into 'Kradat Tak'.",
       jp: "このウェブアプリは、カードスタントを演出するために、各人がどの色をフリップするかに関する指示である「クラダットタック」を作成するのに役立ちます。 ほとんどの画像を「クラダットタック」に変換できます。",
     },
+    type: "personal",
     stack: ["React", "Python", "Flask"],
     date: new Date(2023, 2),
     image: "autoPraeAksorn.webp",
