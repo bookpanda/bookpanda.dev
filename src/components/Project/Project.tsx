@@ -19,7 +19,15 @@ export const Project: FC<ProjectProps> = ({ project }) => {
           <h2 className="mb-4 text-xl text-white">
             {translate(project.title)}
           </h2>
-          <p className="text-md text-white">{translate(project.description)}</p>
+          <p className="text-md mb-4 text-white">
+            {translate(project.description)}
+          </p>
+          <p className="text-md text-white">
+            {project.stack.map((s, idx) => {
+              if (idx === project.stack.length - 1) return s;
+              return `${s}・`;
+            })}
+          </p>
         </div>
         <div className="flex w-full justify-end pb-4 pr-4">
           <Link href={project.url} target="_blank">

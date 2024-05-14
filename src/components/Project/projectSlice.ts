@@ -5,8 +5,12 @@ export interface ProjectState {
   projects: ProjectInst[];
 }
 
+const sortedProjects = projectList.sort(
+  (a, b) => b.date.getTime() - a.date.getTime()
+);
+
 const initialState: ProjectState = {
-  projects: projectList,
+  projects: sortedProjects,
 };
 
 export const projectSlice = createSlice({
