@@ -17,7 +17,7 @@ const ProjectsPage = () => {
       <Navbar title={translate(texts.home.projects)} />
       <div className="mx-[10%] my-[5vh] grid w-[80%] grid-cols-4 justify-between gap-4">
         {projects.map((project) => (
-          <Project key={project.url} project={project} />
+          <Project key={project.image} project={project} />
         ))}
       </div>
       <Footer />
