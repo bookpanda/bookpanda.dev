@@ -68,7 +68,7 @@ export const projectList: ProjectInst[] = [
     type: "team",
     stack: ["Go", "gRPC", "postgreSQL", "redis", "minio"],
     date: new Date(2024, 3),
-    image: "praeAksornSim.webp",
+    image: "johnjudBackend.webp",
     url: ["https://github.com/isd-sgcu/johnjud-backend"],
   },
   {
