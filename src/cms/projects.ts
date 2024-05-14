@@ -158,8 +158,8 @@ export const projectList: ProjectInst[] = [
       jp: "PraeAksornシミュレータ",
     },
     description: {
-      en: "PraeAksorn Simulator is inspired by real-life card stunt, which involves assembling a large number of colored papers together to form an image. The objective of this game is to allow you to experience card stunts and form an image within a time limit.",
-      jp: "「PraeAksornシミュレータ」は、多数の色紙を組み合わせて画像を形成する実際のカード スタントからインスピレーションを得ています。 このゲームの目的は、制限時間内にカードスタントを体験し、イメージを形成することです。",
+      en: "PraeAksorn Simulator is inspired by real-life card stunt, which involves assembling a large number of colored papers together to form an image.",
+      jp: "「PraeAksornシミュレータ」は、多数の色紙を組み合わせて画像を形成する実際のカード スタントからインスピレーションを得ています。",
     },
     type: "team",
     stack: ["Java", "JavaFX"],
@@ -188,8 +188,8 @@ export const projectList: ProjectInst[] = [
       jp: "自動式PraeAksorn",
     },
     description: {
-      en: "This webapp will help create 'Kradat Tak' or instructions on what color to flip for each person in order to orchestrate card stunts. You can turn virtually any image into 'Kradat Tak'.",
-      jp: "このウェブアプリは、カードスタントを演出するために、各人がどの色をフリップするかに関する指示である「クラダットタック」を作成するのに役立ちます。 ほとんどの画像を「クラダットタック」に変換できます。",
+      en: "This webapp will help create instructions on what color to flip to orchestrate card stunts. You can use any image.",
+      jp: "この Web アプリは、カードスタントを演出するためにどの色を反転させるかについての指示を作成するのに役立ちます。 どの画像でも使用できます。",
     },
     type: "personal",
     stack: ["React", "Python", "Flask"],
