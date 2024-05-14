@@ -19,7 +19,7 @@ const SocialIcon: FC<SocialIconProps> = ({ children, url }) => (
 export const Footer = () => {
   const thisYear = new Date().getFullYear();
   return (
-    <nav className="sticky top-0 flex h-14 w-screen items-center justify-between bg-[#474747] pl-[20%]">
+    <nav className="sticky top-0 flex h-14 w-screen items-center justify-between bg-[#474747] pl-4 lg:pl-[20%]">
       <div className="flex w-[70%]">
         <h2 className="text-white">{`© ${thisYear} bookpanda.dev`}</h2>
       </div>
