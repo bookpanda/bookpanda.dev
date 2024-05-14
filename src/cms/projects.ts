@@ -11,21 +11,21 @@ export interface ProjectInst {
 }
 
 export const projectList: ProjectInst[] = [
-  {
-    title: {
-      en: "",
-      jp: "",
-    },
-    description: {
-      en: "",
-      jp: "",
-    },
-    type: "personal",
-    stack: [],
-    date: new Date(2023, 5),
-    image: "",
-    url: [""],
-  },
+  // {
+  //   title: {
+  //     en: "",
+  //     jp: "",
+  //   },
+  //   description: {
+  //     en: "",
+  //     jp: "",
+  //   },
+  //   type: "personal",
+  //   stack: [],
+  //   date: new Date(2023, 5),
+  //   image: "",
+  //   url: [""],
+  // },
   {
     title: {
       en: "anime-stats",
@@ -109,6 +109,21 @@ export const projectList: ProjectInst[] = [
   },
   {
     title: {
+      en: "MyGraderList",
+      jp: "マイグレーダーリスト",
+    },
+    description: {
+      en: "MyGraderList is a web app that lets students assess the difficulties and worthiness of each DSA grader problem in their respective courses.",
+      jp: "MyGraderList は、学生がそれぞれのコースの DSA 採点者の問題の難しさと価値を評価できる Web アプリです。",
+    },
+    type: "personal",
+    stack: ["React", "Go", "gRPC", "mySQL", "redis"],
+    date: new Date(2023, 11),
+    image: "myGraderList.webp",
+    url: ["https://github.com/bookpanda/mygraderlist"],
+  },
+  {
+    title: {
       en: "mite-kure",
       jp: "見てくれ",
     },
@@ -166,5 +181,20 @@ export const projectList: ProjectInst[] = [
     date: new Date(2023, 2),
     image: "autoPraeAksorn.webp",
     url: ["https://github.com/bookpanda/AutoPraeAksorn"],
+  },
+  {
+    title: {
+      en: "remu-goro-nekoka",
+      jp: "レムゴロネコカ",
+    },
+    description: {
+      en: "Just pat her head.",
+      jp: "彼女の頭を撫でてください。",
+    },
+    type: "personal",
+    stack: ["React", "react-player"],
+    date: new Date(2023, 2),
+    image: "remuNekoka.gif",
+    url: ["https://github.com/bookpanda/remu-goro-nekoka"],
   },
 ];
