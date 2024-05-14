@@ -26,17 +26,17 @@ export const projectList: ProjectInst[] = [
   },
   {
     title: {
-      en: "",
-      jp: "",
+      en: "anime-stats",
+      jp: "アニメスタッツ",
     },
     description: {
-      en: "",
-      jp: "",
+      en: "When engineering managers are recruiting, if they happen to have the same taste as you, you're in luck. So you'd better not rate objectively mid stuffs (e.g. SAO 😭) more than 8.",
+      jp: "エンジニアリングマネージャーが採用を行う際、あなたと同じ趣味を持っている場合、あなたは幸運です。 ですから、客観的に中程度のもの (例: SAO 😭) を 8 よりも高く評価しない方がよいでしょう。",
     },
-    stack: [],
-    date: new Date(2023, 5),
-    image: "",
-    url: [""],
+    stack: ["github-actions", "GraphQL"],
+    date: new Date(2024, 4),
+    image: "animeStats.webp",
+    url: ["https://github.com/bookpanda/anime-stats"],
   },
   {
     title: {
@@ -47,7 +47,7 @@ export const projectList: ProjectInst[] = [
       en: "try clicking it fast enough, then something will happen",
       jp: "十分に速くクリックしてみてください、それから何かが起こります。",
     },
-    stack: ["react", "redux", "go", "gin", "postgresql"],
+    stack: ["React", "Redux", "Go", "gin", "postgreSQL"],
     date: new Date(2024, 3),
     image: "angryfern.webp",
     url: [
@@ -64,7 +64,7 @@ export const projectList: ProjectInst[] = [
       en: "Makes Japanese Anki cards from ANY Spotify lyrics.",
       jp: "Spotifyの歌詞から日本語のAnkiカードを作成します。",
     },
-    stack: ["react", "aws-lambda", "python", "tokenizer"],
+    stack: ["React", "AWS-Lambda", "Python", "tokenizer"],
     date: new Date(2024, 2),
     image: "lyrics2anki.webp",
     url: [
@@ -81,7 +81,7 @@ export const projectList: ProjectInst[] = [
       en: "Aaaahhh look at this! generator",
       jp: "ああぁぁぁぁ　見てくれ！ ジェネレーター",
     },
-    stack: [],
+    stack: ["React", "react-player"],
     date: new Date(2023, 9),
     image: "miteKure.gif",
     url: ["https://github.com/bookpanda/mite-kure"],
@@ -99,6 +99,20 @@ export const projectList: ProjectInst[] = [
     date: new Date(2023, 5),
     image: "praeAksornSim.webp",
     url: ["https://github.com/bookpanda/PraeAksornSimulator"],
+  },
+  {
+    title: {
+      en: "intania-department-calculator",
+      jp: "インタニア部門計算機",
+    },
+    description: {
+      en: "Calculates your likelihood of getting into your desired engineering departments in Chulalongkorn University.",
+      jp: "チュラロンコン大学の理工学部門に入る可能性を計算します。",
+    },
+    stack: ["React", "material-ui"],
+    date: new Date(2023, 5),
+    image: "intaniaCal.webp",
+    url: ["https://github.com/bookpanda/intania-department-calculator"],
   },
   {
     title: {
