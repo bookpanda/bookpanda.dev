@@ -1,14 +1,22 @@
+type LangChoice = { en: string; jp: string };
+
 export interface ProjectInst {
-  title: string;
-  description: string;
+  title: LangChoice;
+  description: LangChoice;
   image: string;
   url: string;
 }
 
 export const projectList: ProjectInst[] = [
   {
-    title: "Project 1",
-    description: "A simple project",
+    title: {
+      en: "return home",
+      jp: "ホームに戻る",
+    },
+    description: {
+      en: "return home",
+      jp: "ホームに戻る",
+    },
     image: "praeAksornSim.webp",
     url: "",
   },
