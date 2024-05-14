@@ -40,6 +40,20 @@ export const projectList: ProjectInst[] = [
   },
   {
     title: {
+      en: "samlam-bot",
+      jp: "サムラムボット",
+    },
+    description: {
+      en: "Making a bot with the personality of that one friend who always has something to say without filters.",
+      jp: "常にフィルターなしで何かを言うあの友達の性格を持つボットを作成する。",
+    },
+    stack: [],
+    date: new Date(2024, 4),
+    image: "samlamBot.webp",
+    url: ["https://github.com/bookpanda/samlam-bot"],
+  },
+  {
+    title: {
       en: "angryfern",
       jp: "怒っているフェルン",
     },
@@ -71,6 +85,20 @@ export const projectList: ProjectInst[] = [
       "https://github.com/bookpanda/Lyrics2Anki",
       "https://github.com/bookpanda/lyrics2anki-tokenizer",
     ],
+  },
+  {
+    title: {
+      en: "snapping-thoughts",
+      jp: "頭が痛いほどの思想",
+    },
+    description: {
+      en: "Twitter bot that tweets a random shower thought from the list of quotes every 24 hours.",
+      jp: "引用リストからランダムなシャワーの思考をツイートする Twitter ボット。",
+    },
+    stack: ["Go", "AWS-Lambda", "DynamoDB", "Twitter API"],
+    date: new Date(2023, 12),
+    image: "snappingThoughts.webp",
+    url: ["https://github.com/bookpanda/snapping-thoughts"],
   },
   {
     title: {
